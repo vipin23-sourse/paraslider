@@ -623,26 +623,105 @@ ul {
   background-color: #e2e2e2;
 }
 
-/* line 113, src/assets/scss/base/_base.scss */
-#section1 {
-  background-color: #0FF;
+/* line 112, src/assets/scss/base/_base.scss */
+.section-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
 }
 
-/* line 116, src/assets/scss/base/_base.scss */
+/* line 120, src/assets/scss/base/_base.scss */
+.slider-logo {
+  height: 13.6rem !important;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+  position: absolute;
+  left: 4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: left !important;
+}
+
+/* line 130, src/assets/scss/base/_base.scss */
+.image-overColor {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.39);
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 137, src/assets/scss/base/_base.scss */
+.video-control {
+  position: absolute;
+  z-index: 1;
+  bottom: 4rem;
+  right: 4rem;
+}
+
+/* line 143, src/assets/scss/base/_base.scss */
+.video-control span {
+  display: inline-block;
+  color: var(--color-white);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* line 150, src/assets/scss/base/_base.scss */
+#section1 {
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 156, src/assets/scss/base/_base.scss */
 .section-content {
   /*border:1px solid #F00;*/
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 
-/* line 122, src/assets/scss/base/_base.scss */
+/* line 163, src/assets/scss/base/_base.scss */
+.section-content h1 {
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-family: var(--font-bold);
+  color: var(--color-white);
+  line-height: 1.1;
+}
+
+/* line 170, src/assets/scss/base/_base.scss */
+.section-content h1 span {
+  display: block;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+/* line 177, src/assets/scss/base/_base.scss */
+.section-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+
+/* line 185, src/assets/scss/base/_base.scss */
 h1 {
   margin: 0;
   color: #333;
 }
 
-/* line 126, src/assets/scss/base/_base.scss */
+/* line 189, src/assets/scss/base/_base.scss */
 h1 i.fa {
   font-size: 3em;
   color: #FFF;
@@ -650,7 +729,7 @@ h1 i.fa {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 131, src/assets/scss/base/_base.scss */
+/* line 194, src/assets/scss/base/_base.scss */
 i.fa:hover {
   color: #f00;
   cursor: pointer;
@@ -658,40 +737,114 @@ i.fa:hover {
           transform: scale(1.2) rotate(10deg);
 }
 
-/* line 136, src/assets/scss/base/_base.scss */
+/* line 199, src/assets/scss/base/_base.scss */
 #section2 {
   background-color: #0F0;
 }
 
-/* line 139, src/assets/scss/base/_base.scss */
+/* line 202, src/assets/scss/base/_base.scss */
 #section3 {
   background-color: #0ff;
 }
 
-/* line 142, src/assets/scss/base/_base.scss */
+/* line 205, src/assets/scss/base/_base.scss */
 .slide {
   background-size: cover;
   background-position: center;
 }
 
-/* line 146, src/assets/scss/base/_base.scss */
+/* line 209, src/assets/scss/base/_base.scss */
 #slide1 {
   background-image: url(http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/10/cat.jpg);
 }
 
-/* line 149, src/assets/scss/base/_base.scss */
+/* line 212, src/assets/scss/base/_base.scss */
 #section4 {
   background-color: #999;
 }
 
-/* line 152, src/assets/scss/base/_base.scss */
+/* line 215, src/assets/scss/base/_base.scss */
 #fp-nav ul li a span {
   background-color: #f00;
 }
 
-/* line 156, src/assets/scss/base/_base.scss */
+/* line 219, src/assets/scss/base/_base.scss */
 .fp-slidesNav ul li a span {
   background-color: #fff;
+}
+
+/* line 223, src/assets/scss/base/_base.scss */
+.explore-btn {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  bottom: 7.1rem;
+  padding: 1.2rem 2rem;
+  min-width: 25.9rem;
+  border-radius: 2.5rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--font-bold);
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+}
+
+/* line 241, src/assets/scss/base/_base.scss */
+.side-nav {
+  width: 8rem;
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-top: 3.5rem;
+}
+
+/* line 249, src/assets/scss/base/_base.scss */
+.side-nav__small-img {
+  width: 7rem;
+  height: 4.2rem;
+  border-radius: 5px;
+}
+
+/* line 255, src/assets/scss/base/_base.scss */
+.side-nav span {
+  font-family: var(--font-medium);
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+/* line 262, src/assets/scss/base/_base.scss */
+.side-nav ol {
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* line 267, src/assets/scss/base/_base.scss */
+.side-nav ol li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* line 270, src/assets/scss/base/_base.scss */
+.side-nav ol li:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+/* line 276, src/assets/scss/base/_base.scss */
+.side-nav .map-btn {
+  background-color: var(--color-drak-blue);
+  width: 7rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  padding: 6px;
+  vertical-align: middle;
 }
 
 @font-face {
@@ -787,13 +940,11 @@ i.fa:hover {
   background-color: var(--color-black);
   padding: 6rem 4rem;
   height: 30rem;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   color: var(--color-white);
 }
 
-/* line 14, src/assets/scss/layout/_footer.scss */
+/* line 12, src/assets/scss/layout/_footer.scss */
 .footer__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,95 +953,90 @@ i.fa:hover {
       flex-wrap: wrap;
 }
 
-/* line 19, src/assets/scss/layout/_footer.scss */
+/* line 17, src/assets/scss/layout/_footer.scss */
 .footer__item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-/* line 21, src/assets/scss/layout/_footer.scss */
+/* line 19, src/assets/scss/layout/_footer.scss */
 .footer__item:not(:last-child) {
   -webkit-margin-end: 1.5rem;
           margin-inline-end: 1.5rem;
 }
 
-/* line 25, src/assets/scss/layout/_footer.scss */
+/* line 23, src/assets/scss/layout/_footer.scss */
 .footer__item ul {
   margin-top: -.8rem;
 }
 
-/* line 27, src/assets/scss/layout/_footer.scss */
+/* line 25, src/assets/scss/layout/_footer.scss */
 .footer__item ul li {
   line-height: 3;
   font-size: 1.2rem;
 }
 
-/* line 30, src/assets/scss/layout/_footer.scss */
+/* line 28, src/assets/scss/layout/_footer.scss */
 .footer__item ul li a {
   color: var(--color-white);
 }
 
-/* line 32, src/assets/scss/layout/_footer.scss */
+/* line 30, src/assets/scss/layout/_footer.scss */
 .footer__item ul li a:hover {
   color: var(--color-orange);
 }
 
-/* line 41, src/assets/scss/layout/_footer.scss */
+/* line 39, src/assets/scss/layout/_footer.scss */
 .footer__follow span {
   display: block;
   margin-bottom: 1.5rem;
 }
 
-/* line 48, src/assets/scss/layout/_footer.scss */
+/* line 46, src/assets/scss/layout/_footer.scss */
 .footer__follow a:not(:last-child) {
   -webkit-margin-end: 8px;
           margin-inline-end: 8px;
 }
 
-/* line 53, src/assets/scss/layout/_footer.scss */
+/* line 51, src/assets/scss/layout/_footer.scss */
 .footer__follow .icon {
   height: 2.2rem;
   width: 2.2rem;
 }
 
-/* line 61, src/assets/scss/layout/_footer.scss */
+/* line 59, src/assets/scss/layout/_footer.scss */
 .footer__download span {
   display: block;
   margin-bottom: 1.5rem;
 }
 
-/* line 66, src/assets/scss/layout/_footer.scss */
+/* line 64, src/assets/scss/layout/_footer.scss */
 .footer__download img {
   display: block;
   margin-bottom: 1.5rem;
 }
 
-/* line 73, src/assets/scss/layout/_footer.scss */
+/* line 71, src/assets/scss/layout/_footer.scss */
 .ministry {
   margin-top: 3rem;
 }
 
-/* line 76, src/assets/scss/layout/_footer.scss */
+/* line 74, src/assets/scss/layout/_footer.scss */
 .ministry img:first-child {
   -webkit-margin-end: 3rem;
           margin-inline-end: 3rem;
 }
 
-/* line 82, src/assets/scss/layout/_footer.scss */
+/* line 80, src/assets/scss/layout/_footer.scss */
 .copyRight {
   margin-top: 3rem;
 }
 
-/* line 84, src/assets/scss/layout/_footer.scss */
+/* line 82, src/assets/scss/layout/_footer.scss */
 .copyRight span {
   display: block;
   font-size: 1rem;
-}
-
-/* line 90, src/assets/scss/layout/_footer.scss */
-#section4 {
-  min-height: calc(100vh + 30rem) !important;
 }
 
 /* line 5, src/assets/scss/components/_button.scss */
