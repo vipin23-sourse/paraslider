@@ -2,13 +2,14 @@
 
 $(document).ready(function () {
   $('#fullpage').fullpage({
-    navigation: false,
-    navigationPosition: 'right',
     dragAndMove: true,
-    // navigationTooltips: ['section1', 'section2','section3','section4',],1
-    showActiveTooltip: true,
     slidesNavigation: true,
-    slidesNavPosition: 'bottom',
-    controlArrows: false
+    slidesNavPosition: 'right',
+    controlArrows: false,
+    menu: '#menu',
+    anchors: ['secondSection', 'thirdSection', 'fourthSection', 'fifthSection']
+  });
+  $(".skipVideo").on('click', function () {
+    $.fn.fullpage.moveTo(2);
   });
 });

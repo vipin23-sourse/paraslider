@@ -847,6 +847,16 @@ i.fa:hover {
   vertical-align: middle;
 }
 
+/* line 290, src/assets/scss/base/_base.scss */
+#section1 #menu {
+  display: none !important;
+}
+
+/* line 296, src/assets/scss/base/_base.scss */
+body.fp-viewing-secondSection .side-nav {
+  display: none !important;
+}
+
 @font-face {
   font-family: 'Bold';
   src: url("../font/CertoSans-Bold.eot");
