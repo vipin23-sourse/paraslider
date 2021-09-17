@@ -12,6 +12,16 @@
   --font-light:'Light', Fallback, sans-serif;
 }
 
+/* line 36, src/assets/scss/abstracts/_mixins.scss */
+.route-grid .place-item__wrap img, .route-grid__picture img, .image-scroll ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -562,32 +572,32 @@ body {
   height: 100vh;
 }
 
-/* line 49, src/assets/scss/base/_base.scss */
+/* line 48, src/assets/scss/base/_base.scss */
 .container {
   max-width: 150rem;
   padding: 0 4rem;
 }
 
 @media (min-width: 120em) {
-  /* line 49, src/assets/scss/base/_base.scss */
+  /* line 48, src/assets/scss/base/_base.scss */
   .container {
     max-width: 150rem;
   }
 }
 
-/* line 69, src/assets/scss/base/_base.scss */
+/* line 66, src/assets/scss/base/_base.scss */
 a,
 a:link {
   text-decoration: none;
 }
 
-/* line 74, src/assets/scss/base/_base.scss */
+/* line 71, src/assets/scss/base/_base.scss */
 ul {
   list-style: none;
   padding: 0;
 }
 
-/* line 83, src/assets/scss/base/_base.scss */
+/* line 80, src/assets/scss/base/_base.scss */
 .select2-container .select2-dropdown {
   background-color: white;
   border: none;
@@ -595,266 +605,32 @@ ul {
           box-shadow: 2px 10px 10px #00000040;
 }
 
-/* line 90, src/assets/scss/base/_base.scss */
+/* line 87, src/assets/scss/base/_base.scss */
 .select2-container .select2-results ul {
   font-size: 1.6rem;
 }
 
-/* line 92, src/assets/scss/base/_base.scss */
+/* line 89, src/assets/scss/base/_base.scss */
 .select2-container .select2-results ul .select2-results__option {
   padding: 0 1.5rem;
   line-height: 5rem;
   color: var(--color-black);
 }
 
-/* line 96, src/assets/scss/base/_base.scss */
+/* line 93, src/assets/scss/base/_base.scss */
 .select2-container .select2-results ul .select2-results__option[aria-selected="true"] {
   background: var(--color-black);
   color: white;
 }
 
-/* line 99, src/assets/scss/base/_base.scss */
+/* line 96, src/assets/scss/base/_base.scss */
 .select2-container .select2-results ul .select2-results__option[aria-selected="true"].select2-results__option--highlighted {
   background: var(--color-red);
 }
 
-/* line 104, src/assets/scss/base/_base.scss */
+/* line 101, src/assets/scss/base/_base.scss */
 .select2-container .select2-results ul .select2-results__option--highlighted[aria-selected] {
   background-color: #e2e2e2;
-}
-
-/* line 112, src/assets/scss/base/_base.scss */
-.section-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  position: relative;
-}
-
-/* line 120, src/assets/scss/base/_base.scss */
-.slider-logo {
-  height: 13.6rem !important;
-  width: -webkit-max-content !important;
-  width: -moz-max-content !important;
-  width: max-content !important;
-  position: absolute;
-  left: 4rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  text-align: left !important;
-}
-
-/* line 130, src/assets/scss/base/_base.scss */
-.image-overColor {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.39);
-  position: absolute;
-  z-index: 1;
-}
-
-/* line 137, src/assets/scss/base/_base.scss */
-.video-control {
-  position: absolute;
-  z-index: 1;
-  bottom: 4rem;
-  right: 4rem;
-}
-
-/* line 143, src/assets/scss/base/_base.scss */
-.video-control span {
-  display: inline-block;
-  color: var(--color-white);
-  font-size: 1.6rem;
-  cursor: pointer;
-}
-
-/* line 150, src/assets/scss/base/_base.scss */
-#section1 {
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-/* line 156, src/assets/scss/base/_base.scss */
-.section-content {
-  /*border:1px solid #F00;*/
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
-}
-
-/* line 163, src/assets/scss/base/_base.scss */
-.section-content h1 {
-  text-transform: uppercase;
-  font-size: 10rem;
-  font-family: var(--font-bold);
-  color: var(--color-white);
-  line-height: 1.1;
-}
-
-/* line 170, src/assets/scss/base/_base.scss */
-.section-content h1 span {
-  display: block;
-  font-size: 4rem;
-  line-height: 1;
-}
-
-/* line 177, src/assets/scss/base/_base.scss */
-.section-content img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  overflow: hidden;
-}
-
-/* line 185, src/assets/scss/base/_base.scss */
-h1 {
-  margin: 0;
-  color: #333;
-}
-
-/* line 189, src/assets/scss/base/_base.scss */
-h1 i.fa {
-  font-size: 3em;
-  color: #FFF;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-/* line 194, src/assets/scss/base/_base.scss */
-i.fa:hover {
-  color: #f00;
-  cursor: pointer;
-  -webkit-transform: scale(1.2) rotate(10deg);
-          transform: scale(1.2) rotate(10deg);
-}
-
-/* line 199, src/assets/scss/base/_base.scss */
-#section2 {
-  background-color: #0F0;
-}
-
-/* line 202, src/assets/scss/base/_base.scss */
-#section3 {
-  background-color: #0ff;
-}
-
-/* line 205, src/assets/scss/base/_base.scss */
-.slide {
-  background-size: cover;
-  background-position: center;
-}
-
-/* line 209, src/assets/scss/base/_base.scss */
-#slide1 {
-  background-image: url(http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/10/cat.jpg);
-}
-
-/* line 212, src/assets/scss/base/_base.scss */
-#section4 {
-  background-color: #999;
-}
-
-/* line 215, src/assets/scss/base/_base.scss */
-#fp-nav ul li a span {
-  background-color: #f00;
-}
-
-/* line 219, src/assets/scss/base/_base.scss */
-.fp-slidesNav ul li a span {
-  background-color: #fff;
-}
-
-/* line 223, src/assets/scss/base/_base.scss */
-.explore-btn {
-  background-color: var(--color-orange);
-  color: var(--color-white);
-  bottom: 7.1rem;
-  padding: 1.2rem 2rem;
-  min-width: 25.9rem;
-  border-radius: 2.5rem;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: var(--font-bold);
-  font-size: 1.6rem;
-  letter-spacing: 4px;
-}
-
-/* line 241, src/assets/scss/base/_base.scss */
-.side-nav {
-  width: 8rem;
-  position: absolute;
-  right: 4rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin-top: 3.5rem;
-}
-
-/* line 249, src/assets/scss/base/_base.scss */
-.side-nav__small-img {
-  width: 7rem;
-  height: 4.2rem;
-  border-radius: 5px;
-}
-
-/* line 255, src/assets/scss/base/_base.scss */
-.side-nav span {
-  font-family: var(--font-medium);
-  color: var(--color-white);
-  display: inline-block;
-  font-size: 1.4rem;
-}
-
-/* line 262, src/assets/scss/base/_base.scss */
-.side-nav ol {
-  text-align: center;
-  margin: 0 auto;
-  list-style: none;
-}
-
-/* line 267, src/assets/scss/base/_base.scss */
-.side-nav ol li {
-  list-style: none;
-  cursor: pointer;
-}
-
-/* line 270, src/assets/scss/base/_base.scss */
-.side-nav ol li:not(:last-child) {
-  margin-bottom: 3.2rem;
-}
-
-/* line 276, src/assets/scss/base/_base.scss */
-.side-nav .map-btn {
-  background-color: var(--color-drak-blue);
-  width: 7rem;
-  border-radius: 1.5rem;
-  text-align: center;
-  padding: 6px;
-  vertical-align: middle;
-}
-
-/* line 290, src/assets/scss/base/_base.scss */
-#section1 #menu {
-  display: none !important;
-}
-
-/* line 296, src/assets/scss/base/_base.scss */
-body.fp-viewing-secondSection .side-nav {
-  display: none !important;
 }
 
 @font-face {
@@ -938,9 +714,10 @@ body.fp-viewing-secondSection .side-nav {
   position: fixed;
   z-index: 99;
   width: 100%;
+  top: 0;
 }
 
-/* line 18, src/assets/scss/layout/_header.scss */
+/* line 19, src/assets/scss/layout/_header.scss */
 .menu {
   cursor: pointer;
 }
@@ -1052,44 +829,1042 @@ body.fp-viewing-secondSection .side-nav {
 /* line 5, src/assets/scss/components/_button.scss */
 .btn:link,
 .btn:visited {
-  padding: 6px 2rem;
   outline: none;
   text-decoration: none;
 }
 
-/* line 12, src/assets/scss/components/_button.scss */
+/* line 11, src/assets/scss/components/_button.scss */
 .btn {
-  min-width: 15rem;
-  height: 5rem;
+  width: 14rem;
+  height: 3.3rem;
   border: none;
   text-align: center;
   margin-top: 2rem;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
+  border-radius: 2.5rem;
+  padding: 4px;
 }
 
 /* line 20, src/assets/scss/components/_button.scss */
-.btn img {
-  padding-right: 1.3rem;
-}
-
-/* line 23, src/assets/scss/components/_button.scss */
 .btn--primary {
-  background-color: var(--color-light-black);
+  background-color: var(--color-orange);
   color: var(--color-white);
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+  font-family: var(--font-medium);
 }
 
-/* line 33, src/assets/scss/components/_button.scss */
+/* line 35, src/assets/scss/components/_button.scss */
 .btn:hover {
-  background-color: var(--color-red);
+  background-color: var(--color-black);
   color: var(--color-white);
 }
 
-/* line 39, src/assets/scss/components/_button.scss */
+/* line 41, src/assets/scss/components/_button.scss */
 .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+/* line 47, src/assets/scss/components/_button.scss */
+.btn-feedback {
+  width: 14rem;
+  border-radius: 2.5rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-drak-blue);
+  padding: 1rem 3rem;
+  color: var(--color-drak-blue);
+  margin-top: 2rem;
+  display: block;
+  font-family: var(--font-regular);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* line 7, src/assets/scss/pages/_home.scss */
+.section-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+
+/* line 15, src/assets/scss/pages/_home.scss */
+.slider-logo {
+  height: 13.6rem !important;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+  position: absolute;
+  left: 4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: left !important;
+}
+
+/* line 25, src/assets/scss/pages/_home.scss */
+.image-overColor {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.39);
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 32, src/assets/scss/pages/_home.scss */
+.video-control {
+  position: absolute;
+  z-index: 1;
+  bottom: 4rem;
+  right: 4rem;
+}
+
+/* line 38, src/assets/scss/pages/_home.scss */
+.video-control span {
+  display: inline-block;
+  color: var(--color-white);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* line 45, src/assets/scss/pages/_home.scss */
+#section1 {
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 51, src/assets/scss/pages/_home.scss */
+.section-content {
+  /*border:1px solid #F00;*/
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 58, src/assets/scss/pages/_home.scss */
+.section-content h1 {
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-family: var(--font-bold);
+  color: var(--color-white);
+  line-height: 1.1;
+}
+
+/* line 65, src/assets/scss/pages/_home.scss */
+.section-content h1 span {
+  display: block;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+/* line 72, src/assets/scss/pages/_home.scss */
+.section-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+
+/* line 80, src/assets/scss/pages/_home.scss */
+h1 {
+  margin: 0;
+  color: #333;
+}
+
+/* line 84, src/assets/scss/pages/_home.scss */
+h1 i.fa {
+  font-size: 3em;
+  color: #FFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 89, src/assets/scss/pages/_home.scss */
+i.fa:hover {
+  color: #f00;
+  cursor: pointer;
+  -webkit-transform: scale(1.2) rotate(10deg);
+          transform: scale(1.2) rotate(10deg);
+}
+
+/* line 94, src/assets/scss/pages/_home.scss */
+#section2 {
+  background-color: #0F0;
+}
+
+/* line 97, src/assets/scss/pages/_home.scss */
+#section3 {
+  background-color: #0ff;
+}
+
+/* line 100, src/assets/scss/pages/_home.scss */
+.slide {
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 104, src/assets/scss/pages/_home.scss */
+#slide1 {
+  background-image: url(http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/10/cat.jpg);
+}
+
+/* line 107, src/assets/scss/pages/_home.scss */
+#section4 {
+  background-color: #999;
+}
+
+/* line 110, src/assets/scss/pages/_home.scss */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  width: 16px;
+  height: 16px;
+  margin: -4px 0 0 -4px;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+
+/* line 119, src/assets/scss/pages/_home.scss */
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  width: 16px;
+  height: 16px;
+  margin: -4px 0 0 -4px;
+  background: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ffffff;
+}
+
+/* line 136, src/assets/scss/pages/_home.scss */
+.explore-btn {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  bottom: 7.1rem;
+  padding: 1.2rem 2rem;
+  min-width: 25.9rem;
+  border-radius: 2.5rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--font-bold);
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+}
+
+/* line 154, src/assets/scss/pages/_home.scss */
+.side-nav {
+  width: 8rem;
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-top: 3.5rem;
+}
+
+/* line 162, src/assets/scss/pages/_home.scss */
+.side-nav__small-img {
+  width: 7rem;
+  height: 4.2rem;
+  border-radius: 5px;
+}
+
+/* line 168, src/assets/scss/pages/_home.scss */
+.side-nav span {
+  font-family: var(--font-medium);
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+/* line 175, src/assets/scss/pages/_home.scss */
+.side-nav ol {
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+/* line 180, src/assets/scss/pages/_home.scss */
+.side-nav ol li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* line 183, src/assets/scss/pages/_home.scss */
+.side-nav ol li:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+/* line 189, src/assets/scss/pages/_home.scss */
+.side-nav .map-btn {
+  background-color: var(--color-drak-blue);
+  width: 7rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  padding: 6px;
+  vertical-align: middle;
+}
+
+/* line 203, src/assets/scss/pages/_home.scss */
+#section1 #menu {
+  display: none !important;
+}
+
+/* line 209, src/assets/scss/pages/_home.scss */
+body.fp-viewing-secondSection .side-nav {
+  display: none !important;
+}
+
+/* line 2, src/assets/scss/pages/_detail-page.scss */
+.map-nav {
+  position: absolute;
+  z-index: 2;
+  top: 9rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* line 9, src/assets/scss/pages/_detail-page.scss */
+.map-nav__list {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* line 16, src/assets/scss/pages/_detail-page.scss */
+.map-nav__list .icon-mapNav {
+  stroke: var(--color-white);
+  width: 2rem;
+  height: 2rem;
+}
+
+/* line 24, src/assets/scss/pages/_detail-page.scss */
+.map-nav__item {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 3.1rem;
+}
+
+/* line 31, src/assets/scss/pages/_detail-page.scss */
+.map-nav__item span {
+  display: block;
+  color: var(--color-white);
+  font-size: 1.1rem;
+  font-family: var(--font-book);
+}
+
+/* line 40, src/assets/scss/pages/_detail-page.scss */
+.location-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 4rem;
+  height: 100vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 5rem;
+}
+
+/* line 50, src/assets/scss/pages/_detail-page.scss */
+.location-details__start .btn {
+  display: block;
+  margin-top: 3rem;
+}
+
+/* line 56, src/assets/scss/pages/_detail-page.scss */
+.location-details__end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* line 60, src/assets/scss/pages/_detail-page.scss */
+.location-details__end .icon-share {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 2.8rem;
+  stroke: var(--color-white);
+  fill: transparent;
+}
+
+/* line 68, src/assets/scss/pages/_detail-page.scss */
+.location-details__end .icon-distance {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 1.5rem;
+  left: -1.5rem;
+}
+
+/* line 77, src/assets/scss/pages/_detail-page.scss */
+.location-details__end .distance-info {
+  position: relative;
+  color: var(--color-white);
+}
+
+/* line 79, src/assets/scss/pages/_detail-page.scss */
+.location-details__end .distance-info__number {
+  font-size: 3.4rem !important;
+}
+
+/* line 83, src/assets/scss/pages/_detail-page.scss */
+.location-details__end .distance-info span {
+  display: inline-block;
+  font-size: 2.1rem;
+}
+
+/* line 89, src/assets/scss/pages/_detail-page.scss */
+.location-details__info {
+  margin-top: 2rem;
+}
+
+/* line 94, src/assets/scss/pages/_detail-page.scss */
+.location-details__info-group span {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+/* line 97, src/assets/scss/pages/_detail-page.scss */
+.location-details__info-group span:first-child {
+  color: var(--color-white);
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+
+/* line 102, src/assets/scss/pages/_detail-page.scss */
+.location-details__info-group span:last-child {
+  color: var(--color-light-blue);
+  font-family: var(--font-medium);
+  text-transform: uppercase;
+}
+
+/* line 109, src/assets/scss/pages/_detail-page.scss */
+.location-details__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 114, src/assets/scss/pages/_detail-page.scss */
+.location-details__number {
+  min-width: 5rem;
+  min-height: 5rem;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-family: var(--font-medium);
+  font-size: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+/* line 127, src/assets/scss/pages/_detail-page.scss */
+.location-details__title {
+  -webkit-margin-start: 1.8rem;
+          margin-inline-start: 1.8rem;
+}
+
+/* line 130, src/assets/scss/pages/_detail-page.scss */
+.location-details__title__main {
+  font-size: 2.8rem;
+  font-family: var(--font-medium);
+  color: var(--color-white);
+  display: block;
+}
+
+/* line 137, src/assets/scss/pages/_detail-page.scss */
+.location-details__title__sub {
+  font-size: 2rem;
+  font-family: var(--font-regular);
+  color: #E8E8E8;
+}
+
+/* line 144, src/assets/scss/pages/_detail-page.scss */
+.location-details__icon-info-list {
+  margin-top: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 151, src/assets/scss/pages/_detail-page.scss */
+.location-details__icon {
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: var(--color-white);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 161, src/assets/scss/pages/_detail-page.scss */
+.location-details__icon:not(:last-child) {
+  -webkit-margin-end: 1.5rem;
+          margin-inline-end: 1.5rem;
+}
+
+/* line 164, src/assets/scss/pages/_detail-page.scss */
+.location-details__icon--black {
+  background-color: var(--color-black);
+  font-family: var(--font-medium);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 170, src/assets/scss/pages/_detail-page.scss */
+.location-details__icon--black span {
+  display: block;
+}
+
+/* line 172, src/assets/scss/pages/_detail-page.scss */
+.location-details__icon--black span:last-child {
+  font-size: 1rem;
+}
+
+/* line 178, src/assets/scss/pages/_detail-page.scss */
+.location-details__icon--camp {
+  background-color: #285A75;
+}
+
+/* line 181, src/assets/scss/pages/_detail-page.scss */
+.location-details__icon--climp {
+  background-color: #EF8D50;
+}
+
+/* line 184, src/assets/scss/pages/_detail-page.scss */
+.location-details__icon--hiking {
+  background-color: #C6CA00;
+}
+
+/* line 1, src/assets/scss/pages/_route-info.scss */
+.route-grid {
+  margin-top: 9rem;
+  display: grid;
+  grid-template-columns: 39.4rem repeat(4, 1fr);
+  grid-template-rows: 57.8rem 1fr;
+  grid-template-areas: "side pic pic pic pic" "side info info map map";
+}
+
+/* line 11, src/assets/scss/pages/_route-info.scss */
+.route-grid__side {
+  background-color: var(--color-drak-blue);
+  color: var(--color-white);
+  grid-area: side;
+  padding: 4rem;
+}
+
+/* line 17, src/assets/scss/pages/_route-info.scss */
+.route-grid__side .back-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 22, src/assets/scss/pages/_route-info.scss */
+.route-grid__side span {
+  color: var(--color-orange);
+  font-size: 1.6rem;
+}
+
+/* line 26, src/assets/scss/pages/_route-info.scss */
+.route-grid__side .icon-back {
+  width: .7rem;
+  height: 1.4rem;
+  stroke: var(--color-orange);
+  -webkit-margin-end: .7rem;
+          margin-inline-end: .7rem;
+}
+
+/* line 39, src/assets/scss/pages/_route-info.scss */
+.route-grid .selected-place-item {
+  -webkit-filter: saturate(1) !important;
+          filter: saturate(1) !important;
+}
+
+/* line 43, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+/* line 46, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item:hover {
+  -webkit-filter: saturate(1) !important;
+          filter: saturate(1) !important;
+}
+
+/* line 49, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item:first-child {
+  margin-top: 2.5rem;
+}
+
+/* line 54, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__wrap {
+  border-radius: 1.7rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 65, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+/* line 77, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 83, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 86, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__title__number {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-family: var(--font-medium);
+  padding: 2px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+
+/* line 97, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__title__name {
+  font-size: 1.6rem;
+  font-family: var(--font-regular);
+}
+
+/* line 105, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__fav .icon-fav {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* line 111, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__bottom {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 117, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__bottom .distance-info {
+  color: var(--color-white);
+}
+
+/* line 119, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__bottom .distance-info .icon-distance {
+  width: 6px;
+  height: 12px;
+}
+
+/* line 124, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__bottom .distance-info__number {
+  font-size: 1.8rem !important;
+  color: var(--color-white);
+}
+
+/* line 130, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__bottom .distance-info span {
+  font-family: var(--font-light);
+  font-size: 12px;
+  color: var(--color-white);
+}
+
+/* line 137, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__icon-info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 142, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 149, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__icon:not(:last-child) {
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+
+/* line 154, src/assets/scss/pages/_route-info.scss */
+.route-grid .place-item__icon img {
+  width: 1.6rem;
+  height: auto;
+}
+
+/* line 165, src/assets/scss/pages/_route-info.scss */
+.route-grid__picture {
+  grid-area: pic;
+}
+
+/* line 173, src/assets/scss/pages/_route-info.scss */
+.route-grid__info {
+  grid-area: info;
+  padding: 3rem;
+}
+
+/* line 177, src/assets/scss/pages/_route-info.scss */
+.route-grid__info__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 181, src/assets/scss/pages/_route-info.scss */
+.route-grid__info__head h4 {
+  font-size: 3.6rem;
+  font-family: var(--font-medium);
+}
+
+/* line 187, src/assets/scss/pages/_route-info.scss */
+.route-grid__info__title-sub {
+  font-size: 2rem;
+  font-family: var(--font-regular);
+  color: #808080;
+  display: block;
+  margin-top: 1.1rem;
+}
+
+/* line 196, src/assets/scss/pages/_route-info.scss */
+.route-grid__info__icons li {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 2rem;
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 205, src/assets/scss/pages/_route-info.scss */
+.route-grid__info__icons li:first-child {
+  -webkit-margin-end: 7px;
+          margin-inline-end: 7px;
+}
+
+/* line 209, src/assets/scss/pages/_route-info.scss */
+.route-grid__info__icons ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 215, src/assets/scss/pages/_route-info.scss */
+.route-grid__info__icons .icon {
+  width: 2rem;
+  height: 2rem;
+  fill: none !important;
+  stroke: var(--color-white);
+}
+
+/* line 223, src/assets/scss/pages/_route-info.scss */
+.route-grid__info .location-details__info {
+  margin-top: 2.7rem;
+}
+
+/* line 228, src/assets/scss/pages/_route-info.scss */
+.route-grid__info .location-details__info-group span:first-child {
+  color: var(--color-black);
+}
+
+/* line 233, src/assets/scss/pages/_route-info.scss */
+.route-grid__info p {
+  font-size: 1.5rem;
+  color: var(--color-black);
+  font-family: var(--font-regular);
+  margin-top: 2rem;
+}
+
+/* line 239, src/assets/scss/pages/_route-info.scss */
+.route-grid__info p .read-more {
+  color: #0094D1;
+  font-family: var(--font-medium);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 249, src/assets/scss/pages/_route-info.scss */
+.route-grid__map {
+  grid-area: map;
+}
+
+/* line 257, src/assets/scss/pages/_route-info.scss */
+.readMore-content {
+  display: none;
+}
+
+/* line 259, src/assets/scss/pages/_route-info.scss */
+.readMore-content__warning {
+  background-color: rgba(255, 45, 22, 0.205);
+  padding: 3.3rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 3rem;
+}
+
+/* line 265, src/assets/scss/pages/_route-info.scss */
+.readMore-content__warning--green {
+  background-color: rgba(10, 145, 46, 0.205);
+}
+
+/* line 271, src/assets/scss/pages/_route-info.scss */
+.readMore-content__warning__content h5 {
+  color: #00AEFC;
+  font-size: 1.5rem;
+  font-family: var(--font-medium);
+  margin-bottom: 1.4rem;
+}
+
+/* line 277, src/assets/scss/pages/_route-info.scss */
+.readMore-content__warning__content p {
+  color: #0A912F !important;
+}
+
+/* line 282, src/assets/scss/pages/_route-info.scss */
+.readMore-content__warning p {
+  margin-top: 0;
+  color: #FF2D16;
+  font-family: var(--font-regular);
+}
+
+/* line 288, src/assets/scss/pages/_route-info.scss */
+.readMore-content__warning__icon {
+  -webkit-margin-end: 2rem;
+          margin-inline-end: 2rem;
+}
+
+/* line 290, src/assets/scss/pages/_route-info.scss */
+.readMore-content__warning__icon .icon {
+  height: 7rem;
+  width: 3rem;
+}
+
+/* line 298, src/assets/scss/pages/_route-info.scss */
+.favourite-btn .icon-fav {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: var(--color-white);
+}
+
+/* line 304, src/assets/scss/pages/_route-info.scss */
+.favourite-btn__input {
+  display: none;
+}
+
+/* line 308, src/assets/scss/pages/_route-info.scss */
+.favourite-btn__label {
+  cursor: pointer;
+}
+
+/* line 312, src/assets/scss/pages/_route-info.scss */
+.favourite-btn__input:checked ~ .favourite-btn__label .icon-fav {
+  fill: var(--color-orange);
+  stroke: var(--color-orange);
+}
+
+/* line 318, src/assets/scss/pages/_route-info.scss */
+.image-scroll {
+  margin-top: 4rem;
+  overflow-x: auto;
+}
+
+/* line 322, src/assets/scss/pages/_route-info.scss */
+.image-scroll__wrap {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+/* line 326, src/assets/scss/pages/_route-info.scss */
+.image-scroll ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 329, src/assets/scss/pages/_route-info.scss */
+.image-scroll ul li {
+  width: 19rem;
+  height: 22rem;
+  border-radius: 2rem;
+  -webkit-margin-end: 7px;
+          margin-inline-end: 7px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 336, src/assets/scss/pages/_route-info.scss */
+.image-scroll ul li::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, var(--color-black)), color-stop(50%, rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to top, var(--color-black) 0 5%, rgba(0, 0, 0, 0) 50% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 354, src/assets/scss/pages/_route-info.scss */
+.image-scroll ul li span {
+  position: absolute;
+  left: 1.4rem;
+  bottom: 1.4rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-family: var(--font-medium);
+  color: var(--color-white);
+  z-index: 2;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.5" height="21.5" viewBox="0 0 21.5 21.5">
+  <g id="list-icon" transform="translate(0.25 0.75)">
+    <g id="Group_2746" data-name="Group 2746">
+      <rect id="Rectangle_246" data-name="Rectangle 246" width="20" height="20" transform="translate(0.5)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="Group_2747" data-name="Group 2747">
+      <g id="Group_542" data-name="Group 542" transform="translate(3 4.001)">
+        <line id="Line_50" data-name="Line 50" x2="15.11" fill="none" stroke="#fff" stroke-width="1.5"/>
+        <line id="Line_51" data-name="Line 51" x2="15.11" transform="translate(0 3.935)" fill="none" stroke="#fff" stroke-width="1.5"/>
+        <line id="Line_52" data-name="Line 52" x2="15.11" transform="translate(0 7.869)" fill="none" stroke="#fff" stroke-width="1.5"/>
+        <line id="Line_53" data-name="Line 53" x2="15.11" transform="translate(0 11.804)" fill="none" stroke="#fff" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
