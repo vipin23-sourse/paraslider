@@ -15,24 +15,43 @@
 <body>
     <header class="header">
         <img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD">
-        <img class="menu" src="assets/img/menu.svg" alt="menu">
-    </header>    <main role="main">
-        
-        <div id="fullpage">
-            <div class="section" id="section1">
-              <div class="section-content section-image" style="background:url('assets/img/video.jpg') no-repeat center;">
-                 <img class="slider-logo" src="assets/img/logo.svg" alt="logo">
-                 <div class="video-control">
-                     <span class="skipVideo">Skip Video</span>
-                 </div>
-              </div>
+        <div class="header__middle">
+            <div class="region-title">
+                <svg class="icon">
+                    <use xlink:href="assets/img/sprite.svg#icon-back-arrow"></use>
+                </svg>
+                <span>Central Region</span>
             </div>
-            <div class="section" id="section2" style="background:url('assets/img/Riyadh.jpg') no-repeat center;">
+        </div>
+        <div class="header__end">
+            <div class="search-icon">
+                <svg class="icon-search">
+                    <use xlink:href="assets/img/sprite.svg#icon-search1"></use>
+                </svg>
+            </div>
+            <div class="icon-filter">
+                <img src="assets/img/settings-icon.svg" alt="filter-icon">
+            </div>
+            <img class="menu-icon" src="assets/img/menu.svg" alt="menu">
+        </div>
+    </header>
+    <main role="main">
+
+        <div id="fullpage">
+            <section class="section" id="section1">
+                <div class="section-content section-image" style="background:url('assets/img/video.jpg') no-repeat center;">
+                    <img class="slider-logo" src="assets/img/logo.svg" alt="logo">
+                    <div class="video-control">
+                        <span class="skipVideo">Skip Video</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section2" style="background:url('assets/img/Riyadh.jpg') no-repeat center;">
                 <div class="section-content">
                     <h1>Central <span>Region</span></h1>
                 </div>
                 <a class="explore-btn" href="detail-page.html">Explore</a>
-        
+
                 <div class="side-nav" id="menu">
                     <ol>
                         <li>
@@ -45,7 +64,7 @@
                             <span>Central</span>
                         </li>
                         <li data-menuanchor="slide2"><a href="#slide2"><img class="side-nav__small-img" src="assets/img/north-west-small.jpg" alt="map icon">
-                            <span>North West</span></a>
+                                <span>North West</span></a>
                         </li>
                         <li data-menuanchor="slide3">
                             <a href="#slide3"> <img class="side-nav__small-img" src="assets/img/north-west-small.jpg" alt="map icon">
@@ -65,67 +84,155 @@
                         </li>
                     </ol>
                 </div>
-            </div>
-            <div  class="section" id="section3" style="background:url('assets/img/north-west.jpg') no-repeat center;">
+            </section>
+            <section class="section" id="section3" style="background:url('assets/img/north-west.jpg') no-repeat center;">
                 <div class="section-content">
                     <h1>North West <span>Region</span></h1>
                 </div>
                 <a class="explore-btn" href="detail-page.html">Explore</a>
-        
-               
-            </div>
-            <div class="section" id="section4" style="background:url('assets/img/mountain-biking-95032_1920.jpg') no-repeat center;">
+
+
+            </section>
+            <section class="section" id="section4" style="background:url('assets/img/mountain-biking-95032_1920.jpg') no-repeat center;">
                 <div class="section-content">
                     <h1>North<span>Region</span></h1>
                 </div>
                 <a class="explore-btn" href="detail-page.html">Explore</a>
-        
-                
-            </div>
-          <div class="section fp-auto-height" id="section5">
-            <footer class="footer">
-                <div class="footer__wrap">
-                    <div class="footer__item">
-                        <img src="assets/img/logo-orange.svg" alt="logo">
-                        <div class="ministry">
-                            <img src="assets/img/MinistryofCulture.svg" alt="Ministry of Culture logo">
-                            <img src="assets/img/Explorer.svg" alt="Ministry of Culture logo">
+
+
+            </section>
+            <section class="section fp-auto-height" id="section5">
+                <footer class="footer">
+                    <div class="footer__wrap">
+                        <div class="footer__item">
+                            <img src="assets/img/logo-orange.svg" alt="logo">
+                            <div class="ministry">
+                                <img src="assets/img/MinistryofCulture.svg" alt="Ministry of Culture logo">
+                                <img src="assets/img/Explorer.svg" alt="Ministry of Culture logo">
+                            </div>
+                            <div class="copyRight">
+                                <span>Copyright © 2021 Ministry of Culture</span>
+                                <span>Kingdom of Saudi Arabia All rights reserved</span>
+                            </div>
                         </div>
-                        <div class="copyRight">
-                            <span>Copyright © 2021 Ministry of Culture</span>
-                            <span>Kingdom of Saudi Arabia All rights reserved</span>
+                        <div class="footer__item">
+                            <ul>
+                                <li><a href="">Contact us</a></li>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                                <li><a href="">Cookies</a></li>
+                                <li><a href="">Help</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item footer__follow">
+                            <span>Follow Us</span>
+                            <a href="#"><svg class="icon icon-facebook">
+                                    <use xlink:href="assets/img/sprite.svg#icon-facebook"></use>
+                                </svg></a>
+                            <a href="#"><svg class="icon icon-instagram">
+                                    <use xlink:href="assets/img/sprite.svg#icon-instagram"></use>
+                                </svg></a>
+                            <a href="#"><svg class="icon icon-twitter">
+                                    <use xlink:href="assets/img/sprite.svg#icon-twitter"></use>
+                                </svg></a>
+                        </div>
+                        <div class="footer__item footer__download">
+                            <span>Download the app</span>
+                            <a href="#"><img src="assets/img/playstore.svg" alt="Play store"></a>
+                            <a href="#"><img src="assets/img/appstore.svg" alt="App store"></a>
                         </div>
                     </div>
-                    <div class="footer__item">
-                        <ul>
-                            <li><a href="">Contact us</a></li>
-                            <li><a href="">About us</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Terms and Conditions</a></li>
-                            <li><a href="">Cookies</a></li>
-                            <li><a href="">Help</a></li>
+                </footer>
+            </section>
+        </div>
+
+        <div class="popup-slide">
+            <div class="menu">
+                <div class="menu__header">
+                    <div class="menu__header__start">
+                        <div class="user-image">
+                            <img class="user-img" src="" alt="user">
+                            <svg class="icon-guest">
+                                <use xlink:href="assets/img/sprite.svg#icon-user-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">Guest</span>
+                            <span class="login-btn">Login Now!</span>
+                        </div>
+                    </div>
+                    <div class="menu__header__end">
+                        <button class="close-btn"></button>
+                        <button class="lang-btn">عربي</button>
+                    </div>
+
+                </div>
+                <div class="menu__list">
+                    <div class="accordion-container">
+                        <div class="set">
+                            <a href="#">
+                                <span>Region</span>
+                                <span class="plus-icon"></span>
+                            </a>
+                            <div class="content">
+                                <ul>
+                                    <li><a href="#">Central</a></li>
+                                    <li><a href="#">North West</a></li>
+                                    <li><a href="#">North</a></li>
+                                    <li><a href="#">East</a></li>
+                                    <li><a href="#">West</a></li>
+                                    <li><a href="#">South</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="set">
+                            <a href="#">
+                                <span>General Info</span>
+                                <span class="plus-icon"></span>
+                            </a>
+                            <div class="content">
+                                <ul>
+                                    <li><a href="">Natural World</a></li>
+                                    <li><a href="">Activities</a></li>
+                                    <li><a href="">Driving</a></li>
+                                    <li><a href="">First Aid</a></li>
+                                    <li><a href="">Further Reading</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="menu__list-normal">
+                            <li><a href="">Support and Feedback</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Settings</a></li>
+                            <li><a href="">Logout</a></li>
                         </ul>
                     </div>
-                    <div class="footer__item footer__follow">
-                        <span>Follow Us</span>
-                        <a href="#"><svg class="icon icon-facebook"><use xlink:href="assets/img/sprite.svg#icon-facebook"></use></svg></a>
-                        <a href="#"><svg class="icon icon-instagram"><use xlink:href="assets/img/sprite.svg#icon-instagram"></use></svg></a>
-                        <a href="#"><svg class="icon icon-twitter"><use xlink:href="assets/img/sprite.svg#icon-twitter"></use></svg></a>
-                    </div>
-                    <div class="footer__item footer__download">
-                        <span>Download the app</span>
-                        <a href="#"><img src="assets/img/playstore.svg" alt="Play store"></a>
-                        <a href="#"><img src="assets/img/appstore.svg" alt="App store"></a>
-                    </div>
                 </div>
-            </footer>
-          </div>
-          </div>
+            </div>
+        </div>
+
     </main>
-    
-    
+
+
     <script src="assets/vendor/js/jquery.js"></script>
-    <script src="assets/js/custom.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script>
+        $("#fullpage").fullpage({
+    dragAndMove: true,
+    slidesNavigation: true,
+    slidesNavPosition: "right",
+    controlArrows: false,
+    menu: "#menu",
+    anchors: ["secondSection", "thirdSection", "fourthSection", "fifthSection"],
+  });
+
+  $(".skipVideo").on("click", function () {
+    $.fn.fullpage.moveTo(2);
+  });
+
+    </script>
 </body>
 
 </html>
