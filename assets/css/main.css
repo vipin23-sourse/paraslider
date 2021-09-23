@@ -1847,7 +1847,7 @@ body {
 .slider .slick-dots {
   text-align: left;
   left: 5rem;
-  bottom: 4.6rem;
+  bottom: 4.1rem;
 }
 
 /* line 22, src/assets/scss/components/_slider-img.scss */
@@ -3244,7 +3244,7 @@ body.fp-viewing-secondSection .side-nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -3278,28 +3278,41 @@ body.fp-viewing-secondSection .side-nav {
   overflow-y: auto;
   background-color: var(--color-white);
   text-align: start;
+  height: calc(100vh - 9rem);
 }
 
-/* line 33, src/assets/scss/pages/_list-page.scss */
+/* line 32, src/assets/scss/pages/_list-page.scss */
+.list-wrap__end .scroll-fixed {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+/* line 36, src/assets/scss/pages/_list-page.scss */
 .list-wrap__end .wrap-content {
   padding: 3rem;
 }
 
-/* line 36, src/assets/scss/pages/_list-page.scss */
+/* line 39, src/assets/scss/pages/_list-page.scss */
 .list-wrap__end .wrap-content .location-details__info-group span:first-child {
   color: var(--color-black) !important;
   -webkit-margin-end: 1rem;
           margin-inline-end: 1rem;
 }
 
-/* line 41, src/assets/scss/pages/_list-page.scss */
+/* line 44, src/assets/scss/pages/_list-page.scss */
 .list-wrap__end .wrap-content p {
-  margin-top: 3rem;
+  margin: 1.5rem 0;
 }
 
-/* line 46, src/assets/scss/pages/_list-page.scss */
+/* line 49, src/assets/scss/pages/_list-page.scss */
 .list-wrap__end .wrap-content .readMore-content__warning p {
-  margin-top: 0;
+  margin: 0;
+}
+
+/* line 56, src/assets/scss/pages/_list-page.scss */
+.list-wrap__end .map-section img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
