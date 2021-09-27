@@ -14,7 +14,7 @@
 
 <body>
     <header class="header">
-        <img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD">
+        <a href="index.html"><img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD"></a>
         <div class="header__middle">
             <div class="region-title">
                 <svg class="icon">
@@ -41,8 +41,8 @@
                 <path id="BG" d="M1842.95,101.218H1577.278a39.45,39.45,0,0,1-32.03-16.429l-24.135-33.571h378l-24.135,33.571A39.449,39.449,0,0,1,1842.95,101.218Z" transform="translate(-1521.114 -51.218)"/>
               </svg>
               <ul class="map-nav__list">
-                  <li class="map-nav__item">
-                    <a href="#"><svg class="icon-mapNav icon-map-img"><use xlink:href="assets/img/sprite.svg#icon-img-icon"></use></svg></a>
+                  <li class="map-nav__item active-item">
+                    <a href="detail-page.html"><svg class="icon-mapNav icon-map-img"><use xlink:href="assets/img/sprite.svg#icon-img-icon"></use></svg></a>
                     <span>Image</span>
                   </li>
                   <li class="map-nav__item">
@@ -50,7 +50,7 @@
                     <span>Map</span>
                   </li>
                   <li class="map-nav__item">
-                    <a href="#"><img src="assets/img/list-icon.svg" alt=""></a>
+                    <a href="list-page.html"><img src="assets/img/list-icon.svg" alt=""></a>
                     <span>List</span>
                   </li>
               </ul>
@@ -249,7 +249,28 @@
     
     <script src="assets/vendor/js/jquery.js"></script>
     <script src="assets/vendor/js/slick.js"></script>
-    <script src="assets/js/custom.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="assets/vendor/js/ion.rangeSlider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script>
+      $("#fullpage-detail").fullpage({
+  sectionSelector: ".vertical-scrolling",
+  slideSelector: ".horizontal-scrolling",
+  navigation: true,
+  slidesNavigation: true,
+  controlArrows: false,
+  anchors: [
+    "firstSection",
+    "secondSection",
+    "thirdSection",
+    "fourthSection",
+    "fifthSection",
+  ],
+  menu: "#menu",
+});
+
+  </script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
 
 <body>
     <header class="header">
-        <img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD">
+        <a href="index.html"><img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD"></a>
         <div class="header__middle">
             <div class="region-title">
                 <svg class="icon">
@@ -39,8 +39,8 @@
         <div id="fullpage">
             <section class="section" id="section1">
               <div class="section-content section-image" style="background:url('assets/img/video.jpg') no-repeat center;">
+                <div class="image-overColor"></div>
                  <img class="slider-logo" src="assets/img/logo.svg" alt="logo">
-                 <div class="image-overColor"></div>
                  <div class="video-control">
                      <span class="skipVideo">Skip Video</span>
                  </div>
@@ -141,7 +141,7 @@
           </section>
           </div>
         
-          <div class="popup-slide">
+          <div class="popup-slide popup-slide-1">
               <div class="menu">
                     <div class="menu__header">
                         <div class="menu__header__start">
@@ -186,7 +186,7 @@
                               <div class="content">
                                 <ul>
                                     <li><a href="">Natural World</a></li>
-                                    <li><a href="">Activities</a></li>
+                                    <li><a href="activities.html">Activities</a></li>
                                     <li><a href="">Driving</a></li>
                                     <li><a href="">First Aid</a></li>
                                     <li><a href="">Further Reading</a></li>
@@ -196,13 +196,230 @@
                             <ul class="menu__list-normal">
                                 <li><a href="">Support and Feedback</a></li>
                                 <li><a href="">About</a></li>
-                                <li><a href="">Settings</a></li>
+                                <li class="settings-btn">Settings</li>
                                 <li><a href="">Logout</a></li>
                             </ul>
                         </div>
                     </div>
               </div>
           </div>
+        
+          <div class="popup-slide popup-slide-2">
+              <div class="menu">
+                <div class="setting-popup">
+                    <div class="setting-popup__head">
+                      <div class="setting-popup__start">
+                          <span>Settings</span>
+                      </div>
+                      <div class="setting-popup__end">
+                        <button class="close-btn"></button>
+                      </div>
+                    </div>
+        
+                    <div class="setting-group">
+                        <div class="setting-group__item">
+                            <span class="setting-group__title">Distance</span>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="Distance" id="Distance">
+                                <label class="setting-group__label" for="Distance">
+                                    <span class="setting-group__radio-custom">Kilometers</span>
+                                </label>
+                            </div>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="Distance" id="Miles">
+                                <label class="setting-group__label" for="Miles">
+                                    <span class="setting-group__radio-custom">Miles</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="setting-group">
+                        <div class="setting-group__item">
+                            <span class="setting-group__title">Temperature</span>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="Temperature" id="celsius">
+                                <label class="setting-group__label" for="celsius">
+                                    <span class="setting-group__radio-custom">°C</span>
+                                </label>
+                            </div>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="Temperature" id="fahrenheit">
+                                <label class="setting-group__label" for="fahrenheit">
+                                    <span class="setting-group__radio-custom">°F</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="setting-group">
+                        <div class="setting-group__item">
+                            <span class="setting-group__title">Default Map Layer option</span>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="MapLayer" id="road">
+                                <label class="setting-group__label" for="road">
+                                    <span class="setting-group__radio-custom">Road </span>
+                                </label>
+                            </div>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="MapLayer" id="terrain">
+                                <label class="setting-group__label" for="terrain">
+                                    <span class="setting-group__radio-custom">Terrain</span>
+                                </label>
+                            </div>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="MapLayer" id="satellite">
+                                <label class="setting-group__label" for="satellite">
+                                    <span class="setting-group__radio-custom">Satellite</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-settings" type="submit">Update SETTINGS</button>
+                </div>
+              </div>
+          </div>
+        
+          <div class="popup-slide popup-slide-3">
+            <div class="menu">
+              <div class="setting-popup">
+                  <div class="setting-popup__head">
+                    <div class="setting-popup__start">
+                        <span>Filter</span>
+                    </div>
+                    <div class="setting-popup__end">
+                      <button class="close-btn"></button>
+                    </div>
+                  </div>
+        
+                  <div class="setting-group">
+                      <div class="setting-group__wrap">
+                        <div class="setting-group__item">
+                            <span class="setting-group__title">Region</span>
+                            <div class="radio-scroll">
+                                <div class="setting-group__radio-item">
+                                    <input class="setting-group__input" type="radio" name="Region" id="allRegion">
+                                    <label class="setting-group__label" for="allRegion">
+                                        <span class="setting-group__radio-custom">All</span>
+                                    </label>
+                                </div>
+                                <div class="setting-group__radio-item">
+                                    <input class="setting-group__input" type="radio" name="Region" id="riyadh">
+                                    <label class="setting-group__label" for="riyadh">
+                                        <span class="setting-group__radio-custom">riyadh</span>
+                                    </label>
+                                </div>
+                                <div class="setting-group__radio-item">
+                                    <input class="setting-group__input" type="radio" name="Region" id="tabu">
+                                    <label class="setting-group__label" for="tabu">
+                                        <span class="setting-group__radio-custom">Tabuk</span>
+                                    </label>
+                                </div>
+                                <div class="setting-group__radio-item">
+                                    <input class="setting-group__input" type="radio" name="Region" id="taif">
+                                    <label class="setting-group__label" for="taif">
+                                        <span class="setting-group__radio-custom">TaiF</span>
+                                    </label>
+                                </div>
+                                <div class="setting-group__radio-item">
+                                    <input class="setting-group__input" type="radio" name="Region" id="dahaban">
+                                    <label class="setting-group__label" for="dahaban">
+                                        <span class="setting-group__radio-custom">Dahaban</span>
+                                    </label>
+                                </div>
+                                <div class="setting-group__radio-item">
+                                    <input class="setting-group__input" type="radio" name="Region" id="hautat">
+                                    <label class="setting-group__label" for="hautat">
+                                        <span class="setting-group__radio-custom">Hautat Sudair</span>
+                                    </label>
+                                </div>
+                                <div class="setting-group__radio-item">
+                                    <input class="setting-group__input" type="radio" name="Region" id="yanbu">
+                                    <label class="setting-group__label" for="yanbu">
+                                        <span class="setting-group__radio-custom">Yanbu</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+        
+                  <div class="setting-group">
+                      <div class="setting-group__item">
+                          <span class="setting-group__title">SORT BY</span>
+                          <div class="setting-group__radio-wrap">
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="sortBy" id="nearBY">
+                                <label class="setting-group__label" for="nearBY">
+                                    <span class="setting-group__radio-custom">Near By</span>
+                                </label>
+                            </div>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="sortBy" id="editors">
+                                <label class="setting-group__label" for="editors">
+                                    <span class="setting-group__radio-custom">EDITORS<br> 
+                                      CHOICE</span>
+                                </label>
+                            </div>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="sortBy" id="length">
+                                <label class="setting-group__label" for="length">
+                                    <span class="setting-group__radio-custom">LENGTHS 
+                                      </span>
+                                </label>
+                            </div>
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="sortBy" id="sortaz">
+                                <label class="setting-group__label" for="sortaz">
+                                    <span class="setting-group__radio-custom">A-Z 
+                                      </span>
+                                </label>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+        
+                  
+                  <div class="setting-group">
+                      <div class="setting-group__item">
+                          <span class="setting-group__title">TERRAIN</span>
+                          <div class="setting-group__radio-item">
+                              <input class="setting-group__input" type="radio" name="terrain" id="terrain-1">
+                              <label class="setting-group__label" for="terrain-1">
+                                  <span class="setting-group__radio-custom">GREENERY</span>
+                              </label>
+                          </div>
+                          <div class="setting-group__radio-item">
+                              <input class="setting-group__input" type="radio" name="terrain" id="terrain-2">
+                              <label class="setting-group__label" for="terrain-2">
+                                  <span class="setting-group__radio-custom">ROCKS</span>
+                              </label>
+                          </div>
+                          <div class="setting-group__radio-item">
+                              <input class="setting-group__input" type="radio" name="terrain" id="terrain-3">
+                              <label class="setting-group__label" for="terrain-3">
+                                  <span class="setting-group__radio-custom">DUNES</span>
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="setting-group">
+                    <div class="setting-group__item">
+                        <span class="setting-group__title">TERRAIN <span class="btn-clear">Clear</span></span> 
+                        <input type="text" class="js-range-slider" name="my_range" value=""
+                        data-skin="round"
+                        data-type="double"
+                        data-min="0"
+                        data-max="1000"
+                        data-grid="false"
+                    />
+                    </div>
+                </div>
+                  <button class="btn-settings" type="submit">APPLY</button>
+              </div>
+            </div>
+        </div>
         
           <div id="login" class="login">
             <input type="text" name="" id="" placeholder="E-mail/Mobile number">
@@ -238,7 +455,37 @@
     
     <script src="assets/vendor/js/jquery.js"></script>
     <script src="assets/vendor/js/slick.js"></script>
-    <script src="assets/js/custom.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="assets/vendor/js/ion.rangeSlider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        $("#fullpage").fullpage({
+    dragAndMove: true,
+    slidesNavigation: true,
+    slidesNavPosition: "right",
+    controlArrows: false,
+    menu: "#menu",
+    anchors: ["secondSection", "thirdSection", "fourthSection", "fifthSection"],
+  });
+
+  $(".skipVideo").on("click", function () {
+    $.fn.fullpage.moveTo(2);
+  });
+
+  $("#Central").on("click", function () {
+    $.fn.fullpage.moveTo(2);
+  });
+
+  $("#northWest").on("click", function () {
+    $.fn.fullpage.moveTo(3);
+  });
+  
+  $("#north").on("click", function () {
+    $.fn.fullpage.moveTo(4);
+  });
+
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
 </body>
 
 </html>
