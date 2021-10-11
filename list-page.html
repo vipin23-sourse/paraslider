@@ -8,33 +8,38 @@
     <title>list page</title>
     <!-- build:css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- endbuild -->
 </head>
 
-<body>
+<body class="home-page">
     <header class="header">
-        <a href="index.html"><img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD"></a>
-        <div class="header__middle">
-            <div class="region-title">
-                <svg class="icon">
-                    <use xlink:href="assets/img/sprite.svg#icon-back-arrow"></use>
-                </svg>
-                <span>Central Region</span>
+        <div class="page-wrapper">
+            <div class="header__wrap">
+                <a href="index.html"><img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD"></a>
+            <div class="header__middle">
+                <div class="region-title">
+                    <svg class="icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-back-arrow"></use>
+                    </svg>
+                    <span>Central Region</span>
+                </div>
+            </div>
+            <div class="header__end">
+                <div class="search-icon">
+                    <svg class="icon-search">
+                        <use xlink:href="assets/img/sprite.svg#icon-search1"></use>
+                    </svg>
+                </div>
+                <div class="icon-filter">
+                    <img src="assets/img/settings-icon.svg" alt="filter-icon">
+                </div>
+                <img class="menu-icon" src="assets/img/menu.svg" alt="menu">
+            </div>
             </div>
         </div>
-        <div class="header__end">
-            <div class="search-icon">
-                <svg class="icon-search">
-                    <use xlink:href="assets/img/sprite.svg#icon-search1"></use>
-                </svg>
-            </div>
-            <div class="icon-filter">
-                <img src="assets/img/settings-icon.svg" alt="filter-icon">
-            </div>
-            <img class="menu-icon" src="assets/img/menu.svg" alt="menu">
-        </div>
-    </header>    <main role="main">
+    </header>    <main class="page-wrapper" role="main">
         
         <div class="map-nav">
             <svg xmlns="http://www.w3.org/2000/svg" width="378" height="50" viewBox="0 0 378 50">
@@ -518,7 +523,7 @@
         </div>
         
         <footer class="footer">
-          <div class="footer__wrap">
+          <div class="footer__wrap page-wrapper">
               <div class="footer__item">
                   <img src="assets/img/logo-orange.svg" alt="logo">
                   <div class="ministry">
@@ -558,10 +563,69 @@
     
     <script src="assets/vendor/js/jquery.js"></script>
     <script src="assets/vendor/js/slick.js"></script>
-    <script src="assets/vendor/js/ion.rangeSlider.js"></script>
+    <script src="assets/vendor/js/select.js"></script>
     <script src="assets/js/custom.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script>
+       
+var $range = $(".js-range-slider"),
+    $from = $(".from"),
+    $to = $(".to"),
+    range,
+    min = $range.data('min'),
+    max = $range.data('max'),
+    from,
+    to;
+    
+
+var updateValues = function () {
+    $from.prop("value", from);
+    $to.prop("value", to);
+};
+
+$range.ionRangeSlider({
+    onChange: function (data) {
+      from = data.from;
+      to = data.to;
+      updateValues();
+    }
+});
+
+range = $range.data("ionRangeSlider");
+var updateRange = function () {
+    range.update({
+        from: from,
+        to: to,
+        postfix: "KM"
+    });
+};
+
+$from.on("input", function () {
+    from = +$(this).prop("value");
+    if (from < min) {
+        from = min;
+    }
+    if (from > to) {
+        from = to;
+    }
+    updateValues();    
+    updateRange();
+});
+
+$to.on("input", function () {
+    to = +$(this).prop("value");
+    if (to > max) {
+        to = max;
+    }
+    if (to < from) {
+        to = from;
+    }
+    updateValues();    
+    updateRange();
+});
+    </script>
 </body>
 
 </html>

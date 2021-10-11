@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89.489" height="12" viewBox="0 0 89.489 12">
+  <defs>
+    <filter id="aved-road" x="0" y="0" width="89.489" height="12" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#ff9619"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#aved-road)">
+    <path id="aved-road-2" data-name="aved-road" d="M995.878-2053.244h77.489" transform="translate(-989.88 2059.24)" fill="none" stroke="#ff9619" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

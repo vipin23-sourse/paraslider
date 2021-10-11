@@ -8,33 +8,38 @@
     <title>Home</title>
     <!-- build:css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- endbuild -->
 </head>
 
-<body>
+<body class="home-page">
     <header class="header">
-        <a href="index.html"><img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD"></a>
-        <div class="header__middle">
-            <div class="region-title">
-                <svg class="icon">
-                    <use xlink:href="assets/img/sprite.svg#icon-back-arrow"></use>
-                </svg>
-                <span>Central Region</span>
+        <div class="page-wrapper">
+            <div class="header__wrap">
+                <a href="index.html"><img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD"></a>
+            <div class="header__middle">
+                <div class="region-title">
+                    <svg class="icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-back-arrow"></use>
+                    </svg>
+                    <span>Central Region</span>
+                </div>
+            </div>
+            <div class="header__end">
+                <div class="search-icon">
+                    <svg class="icon-search">
+                        <use xlink:href="assets/img/sprite.svg#icon-search1"></use>
+                    </svg>
+                </div>
+                <div class="icon-filter">
+                    <img src="assets/img/settings-icon.svg" alt="filter-icon">
+                </div>
+                <img class="menu-icon" src="assets/img/menu.svg" alt="menu">
+            </div>
             </div>
         </div>
-        <div class="header__end">
-            <div class="search-icon">
-                <svg class="icon-search">
-                    <use xlink:href="assets/img/sprite.svg#icon-search1"></use>
-                </svg>
-            </div>
-            <div class="icon-filter">
-                <img src="assets/img/settings-icon.svg" alt="filter-icon">
-            </div>
-            <img class="menu-icon" src="assets/img/menu.svg" alt="menu">
-        </div>
-    </header>    <main role="main">
+    </header>    <main class="page-wrapper" role="main">
         
         <div id="fullpage">
             <section class="section" id="section1">
@@ -42,6 +47,10 @@
                 <div class="image-overColor"></div>
                  <img class="slider-logo" src="assets/img/logo.svg" alt="logo">
                  <div class="video-control">
+                     <div class="playBtn-wrap">
+                        <div class='play-btn playing'></div>
+                     </div>
+                    
                      <span class="skipVideo">Skip Video</span>
                  </div>
               </div>
@@ -54,31 +63,31 @@
         
                 <div class="side-nav" id="menu">
                     <ol>
-                        <li>
+                        <li class="mapBtn bordrBtn">
                             <div class="map-btn">
                                 <img src="assets/img/map-icon.svg" alt="map icon">
                             </div>
                             <span>MAP VIEW</span>
                         </li>
-                        <li><img class="side-nav__small-img" src="assets/img/cental--small.jpg" alt="map icon">
+                        <li class="cenBtn bordrBtn"><img class="side-nav__small-img" src="assets/img/cental--small.jpg" alt="map icon">
                             <span>Central</span>
                         </li>
-                        <li data-menuanchor="slide2"><a href="#slide2"><img class="side-nav__small-img" src="assets/img/north-west-small.jpg" alt="map icon">
-                            <span>North West</span></a>
+                        <li class="nwBtn bordrBtn"><img class="side-nav__small-img" src="assets/img/north-west-small.jpg" alt="map icon">
+                            <span>North West</span>
                         </li>
-                        <li data-menuanchor="slide3">
-                            <a href="#slide3"> <img class="side-nav__small-img" src="assets/img/north-west-small.jpg" alt="map icon">
-                                <span>North</span></a>
+                        <li class="nBtn bordrBtn">
+                            <img class="side-nav__small-img" src="assets/img/north-west-small.jpg" alt="map icon">
+                                <span>North</span>
                         </li>
-                        <li>
+                        <li class="bordrBtn">
                             <img class="side-nav__small-img" src="assets/img/north-west-small.jpg" alt="map icon">
                             <span>East</span>
                         </li>
-                        <li>
+                        <li class="bordrBtn">
                             <img class="side-nav__small-img" src="assets/img/north-west-small.jpg" alt="map icon">
                             <span>West</span>
                         </li>
-                        <li>
+                        <li class="bordrBtn">
                             <img class="side-nav__small-img" src="assets/img/north-west-small.jpg" alt="map icon">
                             <span>South</span>
                         </li>
@@ -103,8 +112,8 @@
             </section>
           <section class="section fp-auto-height" id="section5">
             <footer class="footer">
-                <div class="footer__wrap">
-                    <div class="footer__item">
+                <div class="footer__wrap page-wrapper">
+                    <div class="footer__item footer__logo">
                         <img src="assets/img/logo-orange.svg" alt="logo">
                         <div class="ministry">
                             <img src="assets/img/MinistryofCulture.svg" alt="Ministry of Culture logo">
@@ -115,7 +124,7 @@
                             <span>Kingdom of Saudi Arabia All rights reserved</span>
                         </div>
                     </div>
-                    <div class="footer__item">
+                    <div class="footer__item footer__link">
                         <ul>
                             <li><a href="">Contact us</a></li>
                             <li><a href="">About us</a></li>
@@ -133,8 +142,18 @@
                     </div>
                     <div class="footer__item footer__download">
                         <span>Download the app</span>
-                        <a href="#"><img src="assets/img/playstore.svg" alt="Play store"></a>
-                        <a href="#"><img src="assets/img/appstore.svg" alt="App store"></a>
+                        <div class="footer__download__wrap">
+                            <div class="app-store">
+                                <a href="#"><img src="assets/img/playstore.svg" alt="Play store"></a>
+                                <a href="#"><img src="assets/img/appstore.svg" alt="App store"></a>
+                            </div>
+                            <img class="qr-code" src="assets/img/QR-Code.svg" alt="qr code">
+                        </div>
+                    </div>
+        
+                    <div class="ministry ministry--mobile">
+                        <img src="assets/img/MinistryofCulture.svg" alt="Ministry of Culture logo">
+                        <img src="assets/img/Explorer.svg" alt="Ministry of Culture logo">
                     </div>
                 </div>
             </footer>
@@ -194,10 +213,10 @@
                               </div>
                             </div>
                             <ul class="menu__list-normal">
-                                <li><a href="">Support and Feedback</a></li>
+                                <li class="support-btn">Support and Feedback</li>
                                 <li><a href="">About</a></li>
                                 <li class="settings-btn">Settings</li>
-                                <li><a href="">Logout</a></li>
+                                <li>Logout</li>
                             </ul>
                         </div>
                     </div>
@@ -340,6 +359,11 @@
                                         <span class="setting-group__radio-custom">Yanbu</span>
                                     </label>
                                 </div>
+                                <div class="setting-group__radio-item">
+                                    <label class="setting-group__label" for="">
+                                        <span class="setting-group__radio-custom fake-item"></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                       </div>
@@ -413,11 +437,203 @@
                         data-min="0"
                         data-max="1000"
                         data-grid="false"
+                        data-
                     />
+                
                     </div>
                 </div>
+                <div class="setting-group">
+                    <div class="setting-group__item">
+                        <span class="setting-group__title">ACTIVITY</span> 
+                        <div class="setting-group__act-wrap">
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="activity" id="bike">
+                                <label class="setting-group__label" for="bike">
+                                    <span class="setting-group__radio-custom setting-group__radio-custom--round">
+                                        <svg class="icon-mapNav icon-map-img"><use xlink:href="assets/img/sprite.svg#icon-bike"></use></svg>
+                                    </span>
+                                    <span class="setting-group__radio-custom__subtitle">BIKING</span>
+                                </label>
+                            </div>
+            
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="activity" id="camp">
+                                <label class="setting-group__label" for="camp">
+                                    <span class="setting-group__radio-custom setting-group__radio-custom--round">
+                                        <svg class="icon-mapNav icon-map-img"><use xlink:href="assets/img/sprite.svg#icon-camp"></use></svg>
+                                    </span>
+                                    <span class="setting-group__radio-custom__subtitle">CAMPING</span>
+                                </label>
+                            </div>
+        
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="activity" id="cult">
+                                <label class="setting-group__label" for="cult">
+                                    <span class="setting-group__radio-custom setting-group__radio-custom--round">
+                                        <svg class="icon-mapNav icon-map-img"><use xlink:href="assets/img/sprite.svg#icon-culture"></use></svg>
+                                    </span>
+                                    <span class="setting-group__radio-custom__subtitle">CAMPING</span>
+                                </label>
+                            </div>
+            
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="activity" id="hiking">
+                                <label class="setting-group__label" for="hiking">
+                                    <span class="setting-group__radio-custom setting-group__radio-custom--round">
+                                        <svg class="icon-mapNav icon-map-img"><use xlink:href="assets/img/sprite.svg#icon-hike"></use></svg>
+                                    </span>
+                                    <span class="setting-group__radio-custom__subtitle">CAMPING</span>
+                                </label>
+                            </div>
+            
+                            <div class="setting-group__radio-item">
+                                <input class="setting-group__input" type="radio" name="activity" id="water">
+                                <label class="setting-group__label" for="water">
+                                    <span class="setting-group__radio-custom setting-group__radio-custom--round">
+                                        <svg class="icon-mapNav icon-map-img"><use xlink:href="assets/img/sprite.svg#icon-water"></use></svg>
+                                    </span>
+                                    <span class="setting-group__radio-custom__subtitle">WATER</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-group">
+                    <div class="setting-group__item">
+                        <span class="setting-group__title">DIFFICULTY</span>
+                        <div class="setting-group__radio-item">
+                            <input class="setting-group__input" type="radio" name="difficulty" id="easy">
+                            <label class="setting-group__label" for="easy">
+                                <span class="setting-group__radio-custom">EASY</span>
+                            </label>
+                        </div>
+                        <div class="setting-group__radio-item">
+                            <input class="setting-group__input" type="radio" name="difficulty" id="moderate">
+                            <label class="setting-group__label" for="moderate">
+                                <span class="setting-group__radio-custom">MODERATE</span>
+                            </label>
+                        </div>
+                        <div class="setting-group__radio-item">
+                            <input class="setting-group__input" type="radio" name="difficulty" id="hard">
+                            <label class="setting-group__label" for="hard">
+                                <span class="setting-group__radio-custom">HARD</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <span class="filter-result">8 Routes Found</span>
                   <button class="btn-settings" type="submit">APPLY</button>
               </div>
+            </div>
+        </div>
+        
+        <div class="popup-slide popup-slide-5">
+            <div class="menu">
+              <div class="setting-popup">
+                  <div class="setting-popup__head">
+                    <div class="setting-popup__start">
+                        <span>Support and Feedback</span>
+                    </div>
+                    <div class="setting-popup__end">
+                      <button class="close-btn"></button>
+                    </div>
+                  </div>
+                  <form action="" class="feedback">
+                      <div class="feedback__group">
+                        <select name="ChooseType" class="select-drop" id="type">
+                            <option disabled selected>Choose Type</option>
+                            <option value="BIKING">BIKING</option>
+                            <option value="CAMPING">CAMPING</option>
+                            <option value="CULTURE">CULTURE</option>
+                            <option value="HIKING">HIKING</option>
+                          </select>
+                      </div>
+        
+                      <div class="feedback__group">
+                        <select name="ChooseRoute" class="select-drop" id="route">
+                            <option disabled selected>Choose Route</option>
+                            <option value="Riyadh">Riyadh</option>
+                            <option value="Tabuk">Tabuk</option>
+                            <option value="Taif">Taif</option>
+                            <option value="Dahaban">Dahaban</option>
+                          </select>
+                      </div>
+        
+                      <div class="feedback__group">
+                        <label for="email" class="feedback__label"></label>
+                        <div class="file-drop-area">
+                            <span class="file-msg"><svg class="icon-guest"><use xlink:href="assets/img/sprite.svg#icon-img-icon"></use></svg></span>
+                            <span class="fake-btn"></span>
+                            <input class="file-input" type="file" multiple>
+                        </div>
+                      </div>
+        
+                      
+                      <div class="feedback__group">
+                        <label for="comments" class="feedback__label"></label>
+                        <textarea placeholder="Comments" class="feedback__text-area" name="comment" id="comments" cols="30" rows="10"></textarea>
+                        
+                      </div>
+                      <button class="btn-settings" type="submit">Submit</button>
+                  </form>
+              </div>
+            </div>
+        </div>
+        
+        <div class="profile-editpopup">
+            <div class="profile-editpopup__head">
+                <span class="profile-editpopup__head__title">Edit Profile</span>
+                <span class="closeBTN"><img src="assets/img/close-map.svg" alt="close button"><span> 
+            </div>
+            <form class="user-profile">
+                <div class="user-profile__image-wrap">
+                    <img src="assets/img/user-image.jpg" alt="user image">
+                    <div class="user-profile__picedit">
+                        <input type="file" name="" id="userImage">
+                        <label for="userImage">
+                            <svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-img-icon"></use></svg>
+                        </label>
+                    </div>
+                </div>
+                    <div class="user-profile__group">
+                        <input class="user-profile__input" required type="text" value="Khalid Abdullah" name="" id="" placeholder="Enter Name">
+                    </div>
+                    <div class="user-profile__group">
+                        <input class="user-profile__input" required type="email" value="khalid_abdullah@hotmail.com" name="" id="" placeholder="Enter Name">
+                        <svg class="icon email-check"><use xlink:href="assets/img/sprite.svg#icon-email-cheker"></use></svg>
+                    </div>
+                    <div class="user-profile__group">
+                        <input class="user-profile__input user-profile__input" required type="tel" value="+97144561234 " name="" id="" placeholder="Enter Name">
+                    </div>
+                    <div class="user-profile__group">
+                        <input class="user-profile__input" required type="text" value="Riyadh" name="" id="" placeholder="Enter Name">
+                    </div>
+        
+                    <span class="user-profile__changepas">Change Password</span>
+                    <div class="user-profile__group">
+                        <input class="user-profile__input" required type="password" value="" name="" id="" placeholder="Old Password">
+                    </div>
+                    <div class="user-profile__group">
+                        <input class="user-profile__input" required type="password" value="" name="" id="" placeholder="New Password">
+                    </div>
+                    <div class="user-profile__group">
+                        <input class="user-profile__input" required type="password" value="" name="" id="" placeholder="Confirm New Password">
+                    </div>
+        
+                    <button type="submit" class="btn-update">Update Profile</button>
+                    <div class="center-div">
+                        <span class="user-profile__del" role="button">Delete Account</span>
+                    </div>
+                   
+            </form>
+        </div>
+        
+        <div class="popup-slide popup-slide-4 map-slide">
+            <div class="menu">
+                <span class="close-btnmap">
+                    <img src="assets/img/close-map.svg" alt="close button">
+                </span>
+                <img src="assets/img/map-central.svg" alt="central map" class="map-img">
             </div>
         </div>
         
@@ -455,39 +671,85 @@
     
     <script src="assets/vendor/js/jquery.js"></script>
     <script src="assets/vendor/js/slick.js"></script>
-    <script src="assets/vendor/js/ion.rangeSlider.js"></script>
+    <script src="assets/vendor/js/select.js"></script>
     <script src="assets/js/custom.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+
     <script>
-        
-  $("#fullpage").fullpage({
+          $("#fullpage").fullpage({
+    navigation: true,
     dragAndMove: true,
     slidesNavigation: true,
     slidesNavPosition: "right",
+    // sectionSelector: ".vertical-scrolling",
+    slideSelector: ".horizontal-scrolling",
     controlArrows: false,
-    menu: "#menu",
-    anchors: ["secondSection", "thirdSection", "fourthSection", "fifthSection"],
-  });
-
-  $(".skipVideo").on("click", function () {
-    $.fn.fullpage.moveTo(2);
-  });
-
-  $("#Central").on("click", function () {
-    $.fn.fullpage.moveTo(2);
-  });
-
-  $("#northWest").on("click", function () {
-    $.fn.fullpage.moveTo(3);
-  });
-  
-  $("#north").on("click", function () {
-    $.fn.fullpage.moveTo(4);
+    // anchors: ["secondSection", "thirdSection", "fourthSection", "fifthSection"],
+    navigationTooltips: ['', 'Central', 'North West', 'North', 'East', 'South West', 'South', 'South'],
+  menu: "#menu",
   });
 
     </script>
+    <script>
+       
+var $range = $(".js-range-slider"),
+    $from = $(".from"),
+    $to = $(".to"),
+    range,
+    min = $range.data('min'),
+    max = $range.data('max'),
+    from,
+    to;
     
-   
+
+var updateValues = function () {
+    $from.prop("value", from);
+    $to.prop("value", to);
+};
+
+$range.ionRangeSlider({
+    onChange: function (data) {
+      from = data.from;
+      to = data.to;
+      updateValues();
+    }
+});
+
+range = $range.data("ionRangeSlider");
+var updateRange = function () {
+    range.update({
+        from: from,
+        to: to,
+        postfix: "KM"
+    });
+};
+
+$from.on("input", function () {
+    from = +$(this).prop("value");
+    if (from < min) {
+        from = min;
+    }
+    if (from > to) {
+        from = to;
+    }
+    updateValues();    
+    updateRange();
+});
+
+$to.on("input", function () {
+    to = +$(this).prop("value");
+    if (to > max) {
+        to = max;
+    }
+    if (to < from) {
+        to = from;
+    }
+    updateValues();    
+    updateRange();
+});
+    </script>
 </body>
 
 </html>

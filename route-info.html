@@ -8,33 +8,38 @@
     <title>Rotue Info</title>
     <!-- build:css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- endbuild -->
 </head>
 
-<body>
+<body class="home-page">
     <header class="header">
-        <a href="index.html"><img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD"></a>
-        <div class="header__middle">
-            <div class="region-title">
-                <svg class="icon">
-                    <use xlink:href="assets/img/sprite.svg#icon-back-arrow"></use>
-                </svg>
-                <span>Central Region</span>
+        <div class="page-wrapper">
+            <div class="header__wrap">
+                <a href="index.html"><img class="header__logo" src="assets/img/logo.svg" alt="Saudi Arabia OFF ROAD"></a>
+            <div class="header__middle">
+                <div class="region-title">
+                    <svg class="icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-back-arrow"></use>
+                    </svg>
+                    <span>Central Region</span>
+                </div>
+            </div>
+            <div class="header__end">
+                <div class="search-icon">
+                    <svg class="icon-search">
+                        <use xlink:href="assets/img/sprite.svg#icon-search1"></use>
+                    </svg>
+                </div>
+                <div class="icon-filter">
+                    <img src="assets/img/settings-icon.svg" alt="filter-icon">
+                </div>
+                <img class="menu-icon" src="assets/img/menu.svg" alt="menu">
+            </div>
             </div>
         </div>
-        <div class="header__end">
-            <div class="search-icon">
-                <svg class="icon-search">
-                    <use xlink:href="assets/img/sprite.svg#icon-search1"></use>
-                </svg>
-            </div>
-            <div class="icon-filter">
-                <img src="assets/img/settings-icon.svg" alt="filter-icon">
-            </div>
-            <img class="menu-icon" src="assets/img/menu.svg" alt="menu">
-        </div>
-    </header>    <main role="main">
+    </header>    <main class="page-wrapper" role="main">
         <div class="map-nav">
             <svg xmlns="http://www.w3.org/2000/svg" width="378" height="50" viewBox="0 0 378 50">
                 <path id="BG" d="M1842.95,101.218H1577.278a39.45,39.45,0,0,1-32.03-16.429l-24.135-33.571h378l-24.135,33.571A39.449,39.449,0,0,1,1842.95,101.218Z" transform="translate(-1521.114 -51.218)"/>
@@ -219,7 +224,11 @@
                 </ul>
             </div>
             <div class="route-grid__picture">
-                <img src="assets/img/inner1.jpg" alt="">
+                <div class="slider-1">
+                    <img src="assets/img/inner1.jpg" alt="">
+                    <img src="assets/img/inner1.jpg" alt="">
+                    <img src="assets/img/inner1.jpg" alt="">
+                </div>
             </div>
             <div class="route-grid__info">
                 <div class="route-grid__info__head">
@@ -327,18 +336,312 @@
             </div>
             <div class="route-grid__map">
                <img src="assets/img/map.jpg" alt="">
-                  
             </div>
         </div>
+        
+        <div class="notification notification-start notification-startPoint">
+            <div class="notification-start__head">
+                <span class="notification-start__start__title">START</span>
+                <span class="close-notf"><svg class="icon-close"><use xlink:href="assets/img/sprite.svg#close-btnn"></use></svg></span>
+            </div>
+        
+            <div class="notification-start__middle">
+                <div class="notification-start__middle__start">
+                    <span class="notification-start__start__title-loc">Location</span>
+                    <span class="notification-start__start__location">24°59’51.9”N 46°11’39.6”E</span>
+                </div>
+                <div class="notification-start__middle__end">
+                    <div class="btn-group">
+                        <span>COPY <svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-copy"></use></svg></span>
+                        <span>OPEN <svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-open"></use></svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notification notification-start notification-photo">
+            <div class="notification-start__head">
+                <div class="notification-start__head-wrap">
+                    <span class="notification-start__bg"><svg class="icon"><use xlink:href="assets/img/sprite.svg#photo-pointIcon"></use></svg></span>
+                   <span>Photo Point</span>
+                </div>
+                <span class="close-notf"><svg class="icon-close"><use xlink:href="assets/img/sprite.svg#close-btnn"></use></svg></span>
+            </div>
+        
+            <div class="notification-start__middle">
+                <div class="notification-start__middle__start">
+                    <span class="notification-start__start__title-loc">Location</span>
+                    <span class="notification-start__start__location">24°59’51.9”N 46°11’39.6”E</span>
+                </div>
+                <div class="notification-start__middle__end">
+                    <div class="btn-group">
+                        <span>COPY <svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-copy"></use></svg></span>
+                        <span>OPEN <svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-open"></use></svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notification notification-start notification-instruction">
+            <div class="notification-start__head">
+               <div class="notification-start__head__start">
+                <span class="notification-start__info-num">1</span>
+                <span><img src="assets/img/arrowRed.png" alt=""></span>
+               </div>
+                <span class="close-notf"><svg class="icon-close"><use xlink:href="assets/img/sprite.svg#close-btnn"></use></svg></span>
+            </div>
+        
+            <p class="notification-start__para" >After Sadus village take a left at the roundabout and straight at the second roundabout and after 1.5km take a left. At Sadus Dam take a right. </p>
+        
+        
+            <div class="notification-start__middle">
+                <div class="notification-start__middle__start">
+                    <span class="notification-start__start__title-loc">Location</span>
+                    <span class="notification-start__start__location">24°59’51.9”N 46°11’39.6”E</span>
+                </div>
+                <div class="notification-start__middle__end">
+                    <div class="btn-group">
+                        <span>COPY <svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-copy"></use></svg></span>
+                        <span>OPEN <svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-open"></use></svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notification notification-start the-window">
+            <div class="notification-start__head">
+               <div class="notification-start__head__start">
+                   <div class="notification-start__num-group">
+                    <span class="notification-start__info-num">1</span>
+                <span><img src="assets/img/arrowyellow.png" alt=""></span>
+                   </div>
+                <span class="notification-start__info-num-title">THE WINDOW</span>
+               </div>
+                <span class="close-notf"><svg class="icon-close"><use xlink:href="assets/img/sprite.svg#close-btnn"></use></svg></span>
+            </div>
+        
+            
+        <div class="notification-start__middle-layout">
+            <div class="notification-start__middle-layout__start">
+                <img src="assets/img/windowim.jpg" alt="place1">
+            </div>
+            <div class="notification-start__middle-layout__end">
+                <p>There’s a particularly exciting ledge marked on the map 
+                    that curves around the escarpment and offers a jaw-
+                    dropping perspective over a point known as ‘the window’, 
+                    a  natural amphitheatre between two cliffs. This dip in the 
+                    escarpment is where hikers can set off along a trail that 
+                    leads down to the lower plateau and valley, in which you 
+                    can find fossils from some 50 million years ago. 
+                    </p>
+                    <p>
+                        If, like most visitors, you’ve come to the Edge of the World 
+        simply to admire the view with a picnic, time your visit for 
+        sunset, when the dramatic cliffs are bathed in luminous 
+        shades of red and orange. However, unless it’s mid-week, 
+        you’re unlikely to be alone. Sunset tends to draw groups 
+        from Riyadh, and an isolated tourist camp and coffee tent 
+        have been set up to cater to their needs
+                    </p>
+            </div>
+        </div>
+        
+            <div class="notification-start__middle">
+                <div class="notification-start__middle__start">
+                    <span class="notification-start__start__title-loc">Location</span>
+                    <span class="notification-start__start__location">24°59’51.9”N 46°11’39.6”E</span>
+                </div>
+                <div class="notification-start__middle__end">
+                    <div class="btn-group">
+                        <span>COPY <svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-copy"></use></svg></span>
+                        <span>OPEN <svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-open"></use></svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notification notification-start notification-start--small notification-download">
+            <div class="notification-start__head">
+               <div class="notification-start__head__start">
+                <span>Download</span>
+                <span>Edge of the World</span>
+               </div>
+                <span class="close-notf"><svg class="icon-close"><use xlink:href="assets/img/sprite.svg#close-btnn"></use></svg></span>
+            </div>
+        
+            <div class="notification-start__middle">
+                <div class="notification-start__middle__end">
+                    <div class="btn-group">
+                        <span>KML</span>
+                        <span>GPX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notification notification-start notification-start notification-legend">
+            <div class="notification-start__head">
+               <div class="notification-start__head__start">
+                <span>Legend</span>
+               </div>
+                <span class="close-notf"><svg class="icon-close"><use xlink:href="assets/img/sprite.svg#close-btnn"></use></svg></span>
+            </div>
+        
+            <div class="notification-start__middle">
+                <div class="notification-start__middle__start">
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><img src="assets/img/location.svg" alt="location"></div>
+                        <span class="legend-group__title">You are Here</span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><img src="assets/img/unpaved-road.svg" alt="location"></div>
+                        <span class="legend-group__title">Unpaved Road</span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><img src="assets/img/aved-road.svg" alt="location"></div>
+                        <span class="legend-group__title">Paved Road
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><img src="assets/img/hiking-route.svg" alt="location"></div>
+                        <span class="legend-group__title">Hiking Route
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><div class="f-icon-bg f-icon-bg--1"><svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-bike"></use></svg></div> </div>
+                        <span class="legend-group__title">Biking
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><div class="f-icon-bg f-icon-bg--2"><svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-camp"></use></svg></div> </div>
+                        <span class="legend-group__title">Camping
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><div class="f-icon-bg f-icon-bg--3"><svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-climb"></use></svg></div> </div>
+                        <span class="legend-group__title">Climbing
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><div class="f-icon-bg f-icon-bg--4"><svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-culture"></use></svg></div> </div>
+                        <span class="legend-group__title">Culture
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><div class="f-icon-bg f-icon-bg--5"><svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-hike"></use></svg></div> </div>
+                        <span class="legend-group__title">Hiking
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon"><div class="f-icon-bg f-icon-bg--6"><svg class="icon"><use xlink:href="assets/img/sprite.svg#icon-water"></use></svg></div> </div>
+                        <span class="legend-group__title">Water
+                        </span>
+                    </div>
+                </div>
+                <div class="notification-start__middle__end">
+                    <div class="legend-group">
+                        <div class="legend-group__icon">
+                            <img src="assets/img/pointinterest.svg" alt=""> </div>
+                        <span class="legend-group__title">Point of Interest
+        
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon">
+                            <img src="assets/img/photo.svg" alt=""> </div>
+                        <span class="legend-group__title">Photo Point
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon">
+                            <img src="assets/img/instructionpoint.svg" alt=""> </div>
+                        <span class="legend-group__title">Instruction Point
+                        </span>
+                    </div>
+                    <div class="legend-group">
+                        <div class="legend-group__icon">
+                            <img src="assets/img/alert.svg" alt=""> </div>
+                        <span class="legend-group__title">Alert/Caution
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
     </main>
     
     
     <script src="assets/vendor/js/jquery.js"></script>
     <script src="assets/vendor/js/slick.js"></script>
-    <script src="assets/vendor/js/ion.rangeSlider.js"></script>
+    <script src="assets/vendor/js/select.js"></script>
     <script src="assets/js/custom.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script>
+       
+var $range = $(".js-range-slider"),
+    $from = $(".from"),
+    $to = $(".to"),
+    range,
+    min = $range.data('min'),
+    max = $range.data('max'),
+    from,
+    to;
+    
+
+var updateValues = function () {
+    $from.prop("value", from);
+    $to.prop("value", to);
+};
+
+$range.ionRangeSlider({
+    onChange: function (data) {
+      from = data.from;
+      to = data.to;
+      updateValues();
+    }
+});
+
+range = $range.data("ionRangeSlider");
+var updateRange = function () {
+    range.update({
+        from: from,
+        to: to,
+        postfix: "KM"
+    });
+};
+
+$from.on("input", function () {
+    from = +$(this).prop("value");
+    if (from < min) {
+        from = min;
+    }
+    if (from > to) {
+        from = to;
+    }
+    updateValues();    
+    updateRange();
+});
+
+$to.on("input", function () {
+    to = +$(this).prop("value");
+    if (to > max) {
+        to = max;
+    }
+    if (to < from) {
+        to = from;
+    }
+    updateValues();    
+    updateRange();
+});
+    </script>
 </body>
 
 </html>

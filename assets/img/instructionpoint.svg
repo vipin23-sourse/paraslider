@@ -1,0 +1,20 @@
+<svg id="instructionpoint" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.12" height="37.063" viewBox="0 0 21.12 37.063">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1.971" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.264" stop-color="#fff"/>
+      <stop offset="0.329" stop-color="#fff" stop-opacity="0.973"/>
+      <stop offset="0.424" stop-color="#fff" stop-opacity="0.894"/>
+      <stop offset="0.538" stop-color="#fff" stop-opacity="0.765"/>
+      <stop offset="0.667" stop-color="#fff" stop-opacity="0.588"/>
+      <stop offset="0.808" stop-color="#fff" stop-opacity="0.357"/>
+      <stop offset="0.957" stop-color="#fff" stop-opacity="0.082"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1254" data-name="Group 1254" transform="translate(0 0)">
+    <ellipse id="Ellipse_120" data-name="Ellipse 120" cx="10.536" cy="10.536" rx="10.536" ry="10.536" transform="translate(0.024 0)" fill="#eb5a3c"/>
+    <path id="Path_797" data-name="Path 797" d="M302.461,422.452h-21.12l10.29,14.47Z" transform="translate(-281.341 -399.86)" fill="#eb5a3c"/>
+    <path id="Path_798" data-name="Path 798" d="M288.19,422.452v14.47l10.831-14.47Z" transform="translate(-277.9 -399.86)" opacity="0.47" fill="url(#linear-gradient)"/>
+  </g>
+  <text id="_1" data-name="1" transform="translate(10.561 14.415)" fill="#fff" font-size="13" font-family="CertoSans-Bold, Certo Sans" font-weight="700" letter-spacing="0.1em"><tspan x="-2.392" y="0">1</tspan></text>
+</svg>
