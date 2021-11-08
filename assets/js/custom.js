@@ -1,18 +1,20 @@
 "use strict";
 
 $(document).ready(function () {
-  // $("#fullpage").fullpage({
-  //   navigation: true,
-  //   dragAndMove: true,
-  //   slidesNavigation: true,
-  //   slidesNavPosition: "right",
-  //   // sectionSelector: ".vertical-scrolling",
-  //   slideSelector: ".horizontal-scrolling",
-  //   controlArrows: false,
-  //   // anchors: ["secondSection", "thirdSection", "fourthSection", "fifthSection"],
-  //   navigationTooltips: ['', 'Central', 'North West', 'North', 'East', 'South West', 'South', 'South'],
-  // menu: "#menu",
-  // });
+  /*
+  $("#fullpage").fullpage({
+    navigation: true,
+    dragAndMove: true,
+    slidesNavigation: true,
+    slidesNavPosition: "right",
+    // sectionSelector: ".vertical-scrolling",
+    slideSelector: ".horizontal-scrolling",
+    controlArrows: false,
+    // anchors: ["secondSection", "thirdSection", "fourthSection", "fifthSection"],
+    navigationTooltips: ['', 'Central', 'North West', 'North', 'East', 'South West', 'South', 'South'],
+  menu: "#menu",
+  });
+  */
   $(".skipVideo").on("click", function () {
     $.fn.fullpage.moveTo(2);
   });
@@ -29,18 +31,27 @@ $(document).ready(function () {
   btn.click(function () {
     $(this).siblings().children('.side-nav__small-img').css('border', '0px solid #fff');
     $(this).children('.side-nav__small-img').css('border', '1px solid #fff');
-  }); // // fullpage customization
+  }); // fullpage customization
 
+  /*
   $("#fullpage-detail").fullpage({
-    // sectionsColor: ["#B8AE9C", "#348899", "#F2AE72", "#5C832F", "#B8B89F"],
-    // sectionSelector: ".vertical-scrolling",
-    // slideSelector: ".horizontal-scrolling",
-    // navigation: true,
-    // slidesNavigation: true,
-    // controlArrows: false,
-    // anchors: ["firstSection", "secondSection", "thirdSection", "fourthSection", "fifthSection"],
-    // menu: "#menu"
+    sectionsColor: ["#B8AE9C", "#348899", "#F2AE72", "#5C832F", "#B8B89F"],
+    sectionSelector: ".vertical-scrolling",
+    slideSelector: ".horizontal-scrolling",
+    navigation: true,
+    slidesNavigation: true,
+    controlArrows: false,
+    anchors: [
+      "firstSection",
+      "secondSection",
+      "thirdSection",
+      "fourthSection",
+      "fifthSection",
+    ],
+    menu: "#menu",
   });
+  */
+
   $(".set > a").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
