@@ -18,6 +18,9 @@ $(document).ready(function () {
   $(".skipVideo").on("click", function () {
     $.fn.fullpage.moveTo(2);
   });
+  $(".scroll-arrow").on("click", function () {
+    $.fn.fullpage.moveTo(2);
+  });
   $(".cenBtn").on("click", function () {
     $.fn.fullpage.moveTo(2);
   });
