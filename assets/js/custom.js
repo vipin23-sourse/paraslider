@@ -141,7 +141,7 @@ $(document).ready(function () {
   $(".close-btnmap").click(function () {
     $('.popup-slide-4').removeClass('popupVisible');
   });
-  $(".login-btn").click(function () {
+  $(".log-btn").click(function () {
     $('.popup-slide-1').removeClass('popupVisible');
     $("#login").show();
   });
