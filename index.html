@@ -692,7 +692,7 @@
     <script src="assets/vendor/js/select.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
-    <!-- <script src="assets/js/custom.js"></script> -->
+    <script src="assets/js/custom.js"></script>
     <script>
           $("#fullpage").fullpage({
     navigation: true,
@@ -707,114 +707,7 @@
   menu: "#menu",
   });
     </script>
- <script>
-        
-  function addPopup() {
-    $.fn.fullpage.setAutoScrolling(false);
-    document.body.style.overflowY = 'hidden';
-    return;
-  }
 
-  ;
-
-  function removePopup() {
-    $.fn.fullpage.setAutoScrolling(true);
-    document.body.style.overflowY = 'hidden';
-    return;
-  }
-
-  ;
-  $('.menu-icon').click(function () {
-    $('.popup-slide-1').addClass('popupVisible');
-    addPopup();
-  });
-  $(".close-btn").click(function () {
-    $('.popup-slide-1').removeClass('popupVisible');
-    removePopup();
-  });
-  $('.icon-filter').click(function () {
-    $('.popup-slide-3').addClass('popupVisible');
-    addPopup();
-  });
-  $(".close-btn").click(function () {
-    $('.popup-slide-3').removeClass('popupVisible');
-    removePopup();
-  });
-  $('.settings-btn').click(function () {
-    $('.popup-slide-1').removeClass('popupVisible');
-    $('.popup-slide-2').addClass('popupVisible');
-    addPopup();
-  });
-  $(".close-btn").click(function () {
-    $('.popup-slide-2').removeClass('popupVisible');
-    removePopup();
-  });
-  $('.mapBtn').click(function () {
-    $('.popup-slide-4').addClass('popupVisible');
-    addPopup();
-  });
-  $(".close-btnmap").click(function () {
-    $('.popup-slide-4').removeClass('popupVisible');
-    removePopup();
-  });
-  $('.support-btn').click(function () {
-    $('.popup-slide-1').removeClass('popupVisible');
-    removePopup();
-    $('.popup-slide-5').addClass('popupVisible');
-    addPopup();
-  });
-  $(".close-btn").click(function () {
-    $('.popup-slide-5').removeClass('popupVisible');
-    removePopup();
-  });
-  $(".log-btn").click(function () {
-    $('.popup-slide-1').removeClass('popupVisible');
-    $("#login").show();
-    addPopup();
-  });
-  $(".sign-up-btn").click(function () {
-    $("#login").hide();
-    $("#createAccount").show();
-    addPopup();
-  });
-  $(".place-item").click(function () {
-    $(".list-wrap__end").show();
-  });
-  $('.place-item').click(function () {
-    $('.list-wrap__end').addClass('animation-left');
-  });
-  $('.shareBtn').click(function () {
-    $('.pop-up-notification-detail0').addClass('visible-notification');
-    addPopup();
-  });
-  $('.shareBtnScr').click(function () {
-    $('.pop-up-notification-detail0').addClass('visible-notification');
-    removePopup();
-  });
-  $('.close-notf').click(function () {
-    $('.pop-up-notification-detail0').removeClass('visible-notification');
-    removePopup();
-  });
-
-window.addEventListener('mouseup', function (event) {
-  var pol = document.getElementById('login');
-  var pol1 = document.getElementById('createAccount');
-
-  if (event.target != pol && event.target.parentNode != pol) {
-    pol.style.display = 'none';
-    $.fn.fullpage.setAutoScrolling(true);
-    document.body.style.overflowY = 'hidden';
-    // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
-  }
-
-  if (event.target != pol1 && event.target.parentNode != pol1) {
-    pol1.style.display = 'none';
-    $.fn.fullpage.setAutoScrolling(true);
-    document.body.style.overflowY = 'hidden';
-    //  document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
-  }
-});
-</script>
     
     <script>
         var $range = $(".js-range-slider"),

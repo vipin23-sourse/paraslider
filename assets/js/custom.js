@@ -103,16 +103,16 @@ $(document).ready(function () {
   });
 
   function addPopup() {
-    $.fn.fullpage.setAutoScrolling(false);
-    document.body.style.overflowY = 'hidden';
+    // $.fn.fullpage.setAutoScrolling(false);
+    // document.body.style.overflowY = 'hidden';
     return;
   }
 
   ;
 
   function removePopup() {
-    $.fn.fullpage.setAutoScrolling(true);
-    document.body.style.overflowY = 'auto'; // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
+    // $.fn.fullpage.setAutoScrolling(true);
+    // document.body.style.overflowY = 'auto'; // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
 
     return;
   }
@@ -196,15 +196,11 @@ window.addEventListener('mouseup', function (event) {
 
   if (event.target != pol && event.target.parentNode != pol) {
     pol.style.display = 'none';
-    $.fn.fullpage.setAutoScrolling(true);
-    document.body.style.overflowY = 'auto';
     // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
   }
 
   if (event.target != pol1 && event.target.parentNode != pol1) {
     pol1.style.display = 'none';
-    $.fn.fullpage.setAutoScrolling(true);
-    document.body.style.overflowY = 'auto';
     //  document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
   }
 });
