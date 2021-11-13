@@ -101,60 +101,93 @@ $(document).ready(function () {
   $('.select-drop').select2({
     minimumResultsForSearch: -1
   });
+
+  function addPopup() {
+    $.fn.fullpage.setAutoScrolling(false);
+    document.body.style.overflowY = 'hidden';
+    return;
+  }
+
+  ;
+
+  function removePopup() {
+    $.fn.fullpage.setAutoScrolling(true);
+    document.body.style.overflowY = 'auto'; // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
+
+    return;
+  }
+
+  ;
   $('.menu-icon').click(function () {
     $('.popup-slide-1').addClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(false);
+    addPopup();
   });
   $(".close-btn").click(function () {
     $('.popup-slide-1').removeClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(true);
+    removePopup();
   });
   $('.icon-filter').click(function () {
     $('.popup-slide-3').addClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(false);
+    addPopup();
   });
   $(".close-btn").click(function () {
     $('.popup-slide-3').removeClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(true);
+    removePopup();
   });
   $('.settings-btn').click(function () {
     $('.popup-slide-1').removeClass('popupVisible');
     $('.popup-slide-2').addClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(false);
+    addPopup();
   });
   $(".close-btn").click(function () {
     $('.popup-slide-2').removeClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(true);
+    removePopup();
   });
   $('.mapBtn').click(function () {
     $('.popup-slide-4').addClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(false);
-  });
-  $('.support-btn').click(function () {
-    $('.popup-slide-1').removeClass('popupVisible');
-    $('.popup-slide-5').addClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(false);
-  });
-  $(".close-btn").click(function () {
-    $('.popup-slide-5').removeClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(true);
+    addPopup();
   });
   $(".close-btnmap").click(function () {
     $('.popup-slide-4').removeClass('popupVisible');
-    $.fn.fullpage.setMouseWheelScrolling(true);
+    removePopup();
+  });
+  $('.support-btn').click(function () {
+    $('.popup-slide-1').removeClass('popupVisible');
+    removePopup();
+    $('.popup-slide-5').addClass('popupVisible');
+    addPopup();
+  });
+  $(".close-btn").click(function () {
+    $('.popup-slide-5').removeClass('popupVisible');
+    removePopup();
   });
   $(".log-btn").click(function () {
     $('.popup-slide-1').removeClass('popupVisible');
     $("#login").show();
-    $.fn.fullpage.setMouseWheelScrolling(false);
+    addPopup();
   });
   $(".sign-up-btn").click(function () {
     $("#login").hide();
     $("#createAccount").show();
-    $.fn.fullpage.setMouseWheelScrolling(false);
+    addPopup();
   });
   $(".place-item").click(function () {
     $(".list-wrap__end").show();
+  });
+  $('.place-item').click(function () {
+    $('.list-wrap__end').addClass('animation-left');
+  });
+  $('.shareBtn').click(function () {
+    $('.pop-up-notification-detail0').addClass('visible-notification');
+    addPopup();
+  });
+  $('.shareBtnScr').click(function () {
+    $('.pop-up-notification-detail0').addClass('visible-notification');
+    removePopup();
+  });
+  $('.close-notf').click(function () {
+    $('.pop-up-notification-detail0').removeClass('visible-notification');
+    removePopup();
   });
 });
 window.addEventListener('mouseup', function (event) {
@@ -163,12 +196,16 @@ window.addEventListener('mouseup', function (event) {
 
   if (event.target != pol && event.target.parentNode != pol) {
     pol.style.display = 'none';
-    $.fn.fullpage.setMouseWheelScrolling(true);
+    $.fn.fullpage.setAutoScrolling(true);
+    document.body.style.overflowY = 'auto';
+    // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
   }
 
   if (event.target != pol1 && event.target.parentNode != pol1) {
     pol1.style.display = 'none';
-    $.fn.fullpage.setMouseWheelScrolling(true);
+    $.fn.fullpage.setAutoScrolling(true);
+    document.body.style.overflowY = 'auto';
+    //  document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
   }
 });
 var playBtn = document.querySelector('.play-btn'); //PLAYER FUNCTIONS
