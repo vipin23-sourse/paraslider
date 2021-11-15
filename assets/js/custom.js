@@ -35,18 +35,23 @@ $(document).ready(function () {
     $(this).siblings().children('.side-nav__small-img').css('border', '0px solid #fff');
     $(this).children('.side-nav__small-img').css('border', '1px solid #fff');
   }); // fullpage customization
-/*
-  $("#fullpage-detail").fullpage({
-    sectionsColor: ["#B8AE9C", "#348899", "#F2AE72", "#5C832F", "#B8B89F"],
-    sectionSelector: ".vertical-scrolling",
-    slideSelector: ".horizontal-scrolling",
-    navigation: true,
-    slidesNavigation: true,
-    controlArrows: false,
-    anchors: ["firstSection", "secondSection", "thirdSection", "fourthSection", "fifthSection"],
-    menu: "#menu"
-  });
-  */
+  // $("#fullpage-detail").fullpage({
+  //   sectionsColor: ["#B8AE9C", "#348899", "#F2AE72", "#5C832F", "#B8B89F"],
+  //   sectionSelector: ".vertical-scrolling",
+  //   slideSelector: ".horizontal-scrolling",
+  //   navigation: true,
+  //   slidesNavigation: true,
+  //   controlArrows: false,
+  //   anchors: [
+  //     "firstSection",
+  //     "secondSection",
+  //     "thirdSection",
+  //     "fourthSection",
+  //     "fifthSection",
+  //   ],
+  //   menu: "#menu",
+  // });
+
   $(".set > a").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
@@ -103,16 +108,16 @@ $(document).ready(function () {
   });
 
   function addPopup() {
-    // $.fn.fullpage.setAutoScrolling(false);
-    // document.body.style.overflowY = 'hidden';
+    $.fn.fullpage.setAutoScrolling(false);
+    document.body.style.overflowY = 'hidden';
     return;
   }
 
   ;
 
   function removePopup() {
-    // $.fn.fullpage.setAutoScrolling(true);
-    // document.body.style.overflowY = 'auto'; // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
+    $.fn.fullpage.setAutoScrolling(true);
+    document.body.style.overflowY = 'auto'; // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
 
     return;
   }
@@ -196,12 +201,16 @@ window.addEventListener('mouseup', function (event) {
 
   if (event.target != pol && event.target.parentNode != pol) {
     pol.style.display = 'none';
-    // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
+    $.fn.fullpage.setAutoScrolling(true);
+    document.body.style.overflowY = 'auto';
+    document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
   }
 
   if (event.target != pol1 && event.target.parentNode != pol1) {
     pol1.style.display = 'none';
-    //  document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
+    $.fn.fullpage.setAutoScrolling(true);
+    document.body.style.overflowY = 'auto';
+    document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
   }
 });
 var playBtn = document.querySelector('.play-btn'); //PLAYER FUNCTIONS

@@ -5298,41 +5298,56 @@ ul {
   padding: 5rem 4.4rem;
 }
 
-/* line 351, src/assets/scss/components/_pop-up.scss */
+@media (max-width: 47em) {
+  /* line 346, src/assets/scss/components/_pop-up.scss */
+  .popup-slide-2 .menu, .popup-slide-3 .menu {
+    padding: 15px;
+  }
+}
+
+/* line 354, src/assets/scss/components/_pop-up.scss */
 .popup-slide-3 .close-btn {
   -webkit-padding-end: 5rem !important;
           padding-inline-end: 5rem !important;
 }
 
-/* line 354, src/assets/scss/components/_pop-up.scss */
+@media (max-width: 47em) {
+  /* line 354, src/assets/scss/components/_pop-up.scss */
+  .popup-slide-3 .close-btn {
+    -webkit-padding-end: 15px !important;
+            padding-inline-end: 15px !important;
+  }
+}
+
+/* line 360, src/assets/scss/components/_pop-up.scss */
 .popup-slide-3 .menu {
   -webkit-padding-end: 0;
           padding-inline-end: 0;
 }
 
 @media (max-width: 100em) {
-  /* line 354, src/assets/scss/components/_pop-up.scss */
+  /* line 360, src/assets/scss/components/_pop-up.scss */
   .popup-slide-3 .menu {
     width: 47rem;
   }
 }
 
-/* line 361, src/assets/scss/components/_pop-up.scss */
+/* line 367, src/assets/scss/components/_pop-up.scss */
 .setting-popup {
   overflow: hidden;
 }
 
-/* line 363, src/assets/scss/components/_pop-up.scss */
+/* line 369, src/assets/scss/components/_pop-up.scss */
 .setting-popup :-webkit-scrollbar {
   display: none;
 }
 
-/* line 367, src/assets/scss/components/_pop-up.scss */
+/* line 373, src/assets/scss/components/_pop-up.scss */
 .setting-popup:hover :-webkit-scrollbar {
   display: block;
 }
 
-/* line 372, src/assets/scss/components/_pop-up.scss */
+/* line 378, src/assets/scss/components/_pop-up.scss */
 .setting-popup__wrap {
   height: 85vh;
   overflow-y: auto;
@@ -5340,7 +5355,16 @@ ul {
           padding-inline-end: 4.4rem;
 }
 
-/* line 379, src/assets/scss/components/_pop-up.scss */
+@media (max-width: 47em) {
+  /* line 378, src/assets/scss/components/_pop-up.scss */
+  .setting-popup__wrap {
+    -webkit-padding-end: 15px;
+            padding-inline-end: 15px;
+    height: 89vh;
+  }
+}
+
+/* line 389, src/assets/scss/components/_pop-up.scss */
 .setting-popup .filter-result {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5355,13 +5379,13 @@ ul {
 }
 
 @media (max-width: 100em) {
-  /* line 379, src/assets/scss/components/_pop-up.scss */
+  /* line 389, src/assets/scss/components/_pop-up.scss */
   .setting-popup .filter-result {
     margin-top: 2.8rem;
   }
 }
 
-/* line 391, src/assets/scss/components/_pop-up.scss */
+/* line 401, src/assets/scss/components/_pop-up.scss */
 .setting-popup__head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5374,7 +5398,7 @@ ul {
           justify-content: space-between;
 }
 
-/* line 397, src/assets/scss/components/_pop-up.scss */
+/* line 407, src/assets/scss/components/_pop-up.scss */
 .setting-popup__start span {
   display: inline-block;
   color: var(--color-orange);
@@ -5384,18 +5408,18 @@ ul {
 }
 
 @media (max-width: 100em) {
-  /* line 397, src/assets/scss/components/_pop-up.scss */
+  /* line 407, src/assets/scss/components/_pop-up.scss */
   .setting-popup__start span {
     font-size: 2rem;
   }
 }
 
-/* line 410, src/assets/scss/components/_pop-up.scss */
+/* line 420, src/assets/scss/components/_pop-up.scss */
 .setting-popup__end .close-btn {
   padding: 0;
 }
 
-/* line 413, src/assets/scss/components/_pop-up.scss */
+/* line 423, src/assets/scss/components/_pop-up.scss */
 .setting-popup__end .close-btn::after {
   content: "";
   background-image: url(../img/close-btn.svg);
@@ -5406,7 +5430,7 @@ ul {
   display: inline-block;
 }
 
-/* line 425, src/assets/scss/components/_pop-up.scss */
+/* line 435, src/assets/scss/components/_pop-up.scss */
 .setting-popup .btn-settings {
   display: inline-block;
   background-color: var(--color-orange);
@@ -5425,39 +5449,39 @@ ul {
 }
 
 @media (max-width: 100em) {
-  /* line 425, src/assets/scss/components/_pop-up.scss */
+  /* line 435, src/assets/scss/components/_pop-up.scss */
   .setting-popup .btn-settings {
     margin-top: 3rem;
   }
 }
 
-/* line 446, src/assets/scss/components/_pop-up.scss */
+/* line 456, src/assets/scss/components/_pop-up.scss */
 .setting-group {
   margin-top: 5rem;
   color: var(--color-white);
 }
 
-/* line 447, src/assets/scss/components/_pop-up.scss */
+/* line 457, src/assets/scss/components/_pop-up.scss */
 .setting-group .fake-item {
   min-width: 8rem;
   border: none;
 }
 
 @media (max-width: 100em) {
-  /* line 446, src/assets/scss/components/_pop-up.scss */
+  /* line 456, src/assets/scss/components/_pop-up.scss */
   .setting-group {
     margin-top: 4rem;
   }
 }
 
 @media (max-width: 90em) {
-  /* line 446, src/assets/scss/components/_pop-up.scss */
+  /* line 456, src/assets/scss/components/_pop-up.scss */
   .setting-group {
     margin-top: 3rem;
   }
 }
 
-/* line 470, src/assets/scss/components/_pop-up.scss */
+/* line 480, src/assets/scss/components/_pop-up.scss */
 .setting-group__act-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5467,20 +5491,20 @@ ul {
           justify-content: space-between;
 }
 
-/* line 475, src/assets/scss/components/_pop-up.scss */
+/* line 485, src/assets/scss/components/_pop-up.scss */
 .setting-group__radio-item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-/* line 477, src/assets/scss/components/_pop-up.scss */
+/* line 487, src/assets/scss/components/_pop-up.scss */
 .setting-group__radio-item:not(:last-child) {
   -webkit-margin-end: 1.2rem;
           margin-inline-end: 1.2rem;
 }
 
-/* line 482, src/assets/scss/components/_pop-up.scss */
+/* line 492, src/assets/scss/components/_pop-up.scss */
 .setting-group__title {
   font-size: 1.6rem;
   font-family: var(--font-regular);
@@ -5494,7 +5518,7 @@ ul {
   text-transform: uppercase;
 }
 
-/* line 491, src/assets/scss/components/_pop-up.scss */
+/* line 501, src/assets/scss/components/_pop-up.scss */
 .setting-group__radio-custom {
   background-color: transparent;
   color: var(--color-light-blue);
@@ -5524,7 +5548,7 @@ ul {
           justify-content: center;
 }
 
-/* line 511, src/assets/scss/components/_pop-up.scss */
+/* line 521, src/assets/scss/components/_pop-up.scss */
 .setting-group__radio-custom__subtitle {
   font-size: 12px;
   color: var(--color-light-blue);
@@ -5532,7 +5556,7 @@ ul {
   margin-top: 5px;
 }
 
-/* line 518, src/assets/scss/components/_pop-up.scss */
+/* line 528, src/assets/scss/components/_pop-up.scss */
 .setting-group__radio-custom--round {
   width: 4.2rem;
   height: 4.2rem;
@@ -5542,14 +5566,14 @@ ul {
   margin: 0 auto;
 }
 
-/* line 526, src/assets/scss/components/_pop-up.scss */
+/* line 536, src/assets/scss/components/_pop-up.scss */
 .setting-group__radio-custom--round svg {
   width: 2.6rem;
   height: 2rem;
   fill: var(--color-light-blue) !important;
 }
 
-/* line 535, src/assets/scss/components/_pop-up.scss */
+/* line 545, src/assets/scss/components/_pop-up.scss */
 .setting-group__radio-wrap {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -5559,38 +5583,38 @@ ul {
           align-items: center;
 }
 
-/* line 540, src/assets/scss/components/_pop-up.scss */
+/* line 550, src/assets/scss/components/_pop-up.scss */
 .setting-group__input {
   display: none;
 }
 
-/* line 544, src/assets/scss/components/_pop-up.scss */
+/* line 554, src/assets/scss/components/_pop-up.scss */
 .setting-group__input:checked + .setting-group__label .setting-group__radio-custom {
   background-color: var(--color-light-blue);
   color: var(--color-white);
 }
 
-/* line 547, src/assets/scss/components/_pop-up.scss */
+/* line 557, src/assets/scss/components/_pop-up.scss */
 .setting-group__input:checked + .setting-group__label .setting-group__radio-custom svg {
   fill: var(--color-white) !important;
 }
 
-/* line 553, src/assets/scss/components/_pop-up.scss */
+/* line 563, src/assets/scss/components/_pop-up.scss */
 .setting-group__label {
   display: inline-block;
 }
 
-/* line 560, src/assets/scss/components/_pop-up.scss */
+/* line 570, src/assets/scss/components/_pop-up.scss */
 .radio-scroll .slick-slide {
   margin: 0 1rem;
 }
 
-/* line 563, src/assets/scss/components/_pop-up.scss */
+/* line 573, src/assets/scss/components/_pop-up.scss */
 .radio-scroll .setting-group__radio-item {
   margin: 0;
 }
 
-/* line 569, src/assets/scss/components/_pop-up.scss */
+/* line 579, src/assets/scss/components/_pop-up.scss */
 .profile-editpopup {
   width: 42rem;
   height: 100vh;
@@ -5604,7 +5628,7 @@ ul {
   z-index: 999;
 }
 
-/* line 580, src/assets/scss/components/_pop-up.scss */
+/* line 590, src/assets/scss/components/_pop-up.scss */
 .profile-editpopup__head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5619,7 +5643,7 @@ ul {
   margin-bottom: 5rem;
 }
 
-/* line 587, src/assets/scss/components/_pop-up.scss */
+/* line 597, src/assets/scss/components/_pop-up.scss */
 .profile-editpopup__head__title {
   font-size: 2.4rem;
   font-family: var(--font-regular);
@@ -5628,14 +5652,14 @@ ul {
           margin-inline-start: auto;
 }
 
-/* line 594, src/assets/scss/components/_pop-up.scss */
+/* line 604, src/assets/scss/components/_pop-up.scss */
 .profile-editpopup__head .closeBTN {
   -webkit-margin-start: auto;
           margin-inline-start: auto;
   cursor: pointer;
 }
 
-/* line 603, src/assets/scss/components/_pop-up.scss */
+/* line 613, src/assets/scss/components/_pop-up.scss */
 .user-profile__image-wrap {
   position: relative;
   display: inline-block;
@@ -5645,7 +5669,7 @@ ul {
   margin-bottom: 3.6rem;
 }
 
-/* line 610, src/assets/scss/components/_pop-up.scss */
+/* line 620, src/assets/scss/components/_pop-up.scss */
 .user-profile img {
   width: 100%;
   height: 100%;
@@ -5661,7 +5685,7 @@ ul {
   display: inline-block;
 }
 
-/* line 623, src/assets/scss/components/_pop-up.scss */
+/* line 633, src/assets/scss/components/_pop-up.scss */
 .user-profile__picedit {
   position: absolute;
   z-index: 1;
@@ -5683,17 +5707,17 @@ ul {
           justify-content: center;
 }
 
-/* line 637, src/assets/scss/components/_pop-up.scss */
+/* line 647, src/assets/scss/components/_pop-up.scss */
 .user-profile__picedit input {
   display: none;
 }
 
-/* line 641, src/assets/scss/components/_pop-up.scss */
+/* line 651, src/assets/scss/components/_pop-up.scss */
 .user-profile__picedit label {
   cursor: pointer;
 }
 
-/* line 644, src/assets/scss/components/_pop-up.scss */
+/* line 654, src/assets/scss/components/_pop-up.scss */
 .user-profile__picedit label .icon {
   width: 1.3rem;
   height: 1.3rem;
@@ -5702,13 +5726,13 @@ ul {
   margin-top: 5px;
 }
 
-/* line 655, src/assets/scss/components/_pop-up.scss */
+/* line 665, src/assets/scss/components/_pop-up.scss */
 .user-profile__group {
   margin-bottom: 1.5rem;
   position: relative;
 }
 
-/* line 660, src/assets/scss/components/_pop-up.scss */
+/* line 670, src/assets/scss/components/_pop-up.scss */
 .user-profile__input {
   width: 100%;
   height: 4.2rem;
@@ -5721,12 +5745,12 @@ ul {
   padding: 1.2rem 2.5rem;
 }
 
-/* line 671, src/assets/scss/components/_pop-up.scss */
+/* line 681, src/assets/scss/components/_pop-up.scss */
 .user-profile__input:focus {
   outline: none;
 }
 
-/* line 675, src/assets/scss/components/_pop-up.scss */
+/* line 685, src/assets/scss/components/_pop-up.scss */
 .user-profile__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.699);
 }
@@ -5743,12 +5767,12 @@ ul {
   color: rgba(255, 255, 255, 0.699);
 }
 
-/* line 681, src/assets/scss/components/_pop-up.scss */
+/* line 691, src/assets/scss/components/_pop-up.scss */
 .user-profile__input-mail :focus:invalid .email-check {
   display: none;
 }
 
-/* line 687, src/assets/scss/components/_pop-up.scss */
+/* line 697, src/assets/scss/components/_pop-up.scss */
 .user-profile__changepas {
   display: block;
   font-family: var(--font-light);
@@ -5758,7 +5782,7 @@ ul {
   margin-bottom: 1.2rem;
 }
 
-/* line 696, src/assets/scss/components/_pop-up.scss */
+/* line 706, src/assets/scss/components/_pop-up.scss */
 .user-profile .btn-update {
   width: 100%;
   height: 4.2rem;
@@ -5773,7 +5797,7 @@ ul {
   margin-top: 3rem;
 }
 
-/* line 711, src/assets/scss/components/_pop-up.scss */
+/* line 721, src/assets/scss/components/_pop-up.scss */
 .user-profile__del {
   display: inline-block;
   margin-top: 5rem;
@@ -5782,7 +5806,7 @@ ul {
   cursor: pointer;
 }
 
-/* line 719, src/assets/scss/components/_pop-up.scss */
+/* line 729, src/assets/scss/components/_pop-up.scss */
 .user-profile .email-check {
   width: 1.4rem;
   height: 1.4rem;
@@ -5793,24 +5817,24 @@ ul {
           transform: translateY(-50%);
 }
 
-/* line 730, src/assets/scss/components/_pop-up.scss */
+/* line 740, src/assets/scss/components/_pop-up.scss */
 .feedback {
   margin-top: 5rem;
 }
 
 @media (max-width: 100em) {
-  /* line 730, src/assets/scss/components/_pop-up.scss */
+  /* line 740, src/assets/scss/components/_pop-up.scss */
   .feedback {
     margin-top: 3rem;
   }
 }
 
-/* line 735, src/assets/scss/components/_pop-up.scss */
+/* line 745, src/assets/scss/components/_pop-up.scss */
 .feedback .btn-settings {
   margin-top: 3rem !important;
 }
 
-/* line 739, src/assets/scss/components/_pop-up.scss */
+/* line 749, src/assets/scss/components/_pop-up.scss */
 .feedback__text-area {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
@@ -5822,13 +5846,13 @@ ul {
   font-family: var(--font-light);
 }
 
-/* line 749, src/assets/scss/components/_pop-up.scss */
+/* line 759, src/assets/scss/components/_pop-up.scss */
 .feedback__text-area:focus {
   border: none;
   outline: none;
 }
 
-/* line 754, src/assets/scss/components/_pop-up.scss */
+/* line 764, src/assets/scss/components/_pop-up.scss */
 .feedback__text-area::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.411);
 }
@@ -5845,13 +5869,13 @@ ul {
   color: rgba(255, 255, 255, 0.411);
 }
 
-/* line 758, src/assets/scss/components/_pop-up.scss */
+/* line 768, src/assets/scss/components/_pop-up.scss */
 .feedback__group {
   margin-bottom: 1.5rem;
   width: 100%;
 }
 
-/* line 760, src/assets/scss/components/_pop-up.scss */
+/* line 770, src/assets/scss/components/_pop-up.scss */
 .feedback__group select {
   width: 100%;
   height: 4.2rem;
@@ -5862,12 +5886,12 @@ ul {
   padding: 1.2rem 2.5rem;
 }
 
-/* line 768, src/assets/scss/components/_pop-up.scss */
+/* line 778, src/assets/scss/components/_pop-up.scss */
 .feedback__group select:focus {
   outline: none;
 }
 
-/* line 773, src/assets/scss/components/_pop-up.scss */
+/* line 783, src/assets/scss/components/_pop-up.scss */
 .feedback__group .select2-selection {
   width: 100%;
   height: 4.2rem;
@@ -5879,7 +5903,7 @@ ul {
   color: var(--color-white);
 }
 
-/* line 789, src/assets/scss/components/_pop-up.scss */
+/* line 799, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-drop-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5905,7 +5929,7 @@ ul {
 }
 
 @media (max-width: 767px) {
-  /* line 789, src/assets/scss/components/_pop-up.scss */
+  /* line 799, src/assets/scss/components/_pop-up.scss */
   .feedback__group .file-drop-area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5914,12 +5938,12 @@ ul {
   }
 }
 
-/* line 810, src/assets/scss/components/_pop-up.scss */
+/* line 820, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-drop-area.is-active {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* line 815, src/assets/scss/components/_pop-up.scss */
+/* line 825, src/assets/scss/components/_pop-up.scss */
 .feedback__group .fake-btn {
   text-transform: capitalize;
   text-decoration: underline;
@@ -5929,7 +5953,7 @@ ul {
   font-size: 1.4rem;
 }
 
-/* line 824, src/assets/scss/components/_pop-up.scss */
+/* line 834, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-msg {
   font-size: 1.8rem;
   font-weight: 300;
@@ -5939,14 +5963,14 @@ ul {
   text-overflow: ellipsis;
 }
 
-/* line 832, src/assets/scss/components/_pop-up.scss */
+/* line 842, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-msg svg {
   width: 3rem;
   height: 3rem;
   stroke: rgba(255, 255, 255, 0.459);
 }
 
-/* line 839, src/assets/scss/components/_pop-up.scss */
+/* line 849, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-input {
   position: absolute;
   left: 0;
@@ -5957,17 +5981,17 @@ ul {
   opacity: 0;
 }
 
-/* line 847, src/assets/scss/components/_pop-up.scss */
+/* line 857, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-input:focus {
   outline: none;
 }
 
-/* line 855, src/assets/scss/components/_pop-up.scss */
+/* line 865, src/assets/scss/components/_pop-up.scss */
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: var(--color-white);
 }
 
-/* line 859, src/assets/scss/components/_pop-up.scss */
+/* line 869, src/assets/scss/components/_pop-up.scss */
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
   background-image: url(../img/arrow-drop.svg) !important;
   background-color: transparent;
@@ -5981,7 +6005,7 @@ ul {
   top: 55% !important;
 }
 
-/* line 872, src/assets/scss/components/_pop-up.scss */
+/* line 882, src/assets/scss/components/_pop-up.scss */
 .select-drop {
   width: 100%;
   height: 4.2rem;
@@ -6438,7 +6462,7 @@ i.fa:hover {
 
 /* line 11, src/assets/scss/pages/_detail-page.scss */
 .map-nav {
-  z-index: 2;
+  z-index: 99;
   top: 9rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -6915,7 +6939,12 @@ i.fa:hover {
   display: none !important;
 }
 
-/* line 321, src/assets/scss/pages/_detail-page.scss */
+/* line 320, src/assets/scss/pages/_detail-page.scss */
+.detail-page.fp-viewing-fourthSection .map-nav {
+  display: none !important;
+}
+
+/* line 327, src/assets/scss/pages/_detail-page.scss */
 #fullpage-detail .location-details__info {
   display: none;
 }
@@ -6961,10 +6990,11 @@ i.fa:hover {
   .route-grid {
     grid-template-rows: 1fr;
     grid-template-areas: "side" "pic" "info" "map";
+    margin-top: 6rem;
   }
 }
 
-/* line 37, src/assets/scss/pages/_route-info.scss */
+/* line 38, src/assets/scss/pages/_route-info.scss */
 .route-grid__side {
   background-color: var(--color-drak-blue);
   color: var(--color-white);
@@ -6973,27 +7003,27 @@ i.fa:hover {
 }
 
 @media (max-width: 100em) {
-  /* line 37, src/assets/scss/pages/_route-info.scss */
+  /* line 38, src/assets/scss/pages/_route-info.scss */
   .route-grid__side {
     padding: 3rem;
   }
 }
 
 @media (max-width: 62em) {
-  /* line 37, src/assets/scss/pages/_route-info.scss */
+  /* line 38, src/assets/scss/pages/_route-info.scss */
   .route-grid__side {
     grid-column: 1/ -1;
   }
 }
 
 @media (max-width: 47em) {
-  /* line 37, src/assets/scss/pages/_route-info.scss */
+  /* line 38, src/assets/scss/pages/_route-info.scss */
   .route-grid__side {
     padding: 15px;
   }
 }
 
-/* line 52, src/assets/scss/pages/_route-info.scss */
+/* line 53, src/assets/scss/pages/_route-info.scss */
 .route-grid__side .back-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7004,13 +7034,13 @@ i.fa:hover {
   text-transform: uppercase;
 }
 
-/* line 58, src/assets/scss/pages/_route-info.scss */
+/* line 59, src/assets/scss/pages/_route-info.scss */
 .route-grid__side span {
   color: var(--color-orange);
   font-size: 1.6rem;
 }
 
-/* line 62, src/assets/scss/pages/_route-info.scss */
+/* line 63, src/assets/scss/pages/_route-info.scss */
 .route-grid__side .icon-back {
   width: .7rem;
   height: 1.4rem;
@@ -7020,7 +7050,7 @@ i.fa:hover {
 }
 
 @media (max-width: 62em) {
-  /* line 70, src/assets/scss/pages/_route-info.scss */
+  /* line 71, src/assets/scss/pages/_route-info.scss */
   .route-grid .place-list-wrap {
     width: 100%;
     overflow-x: auto;
@@ -7028,7 +7058,7 @@ i.fa:hover {
 }
 
 @media (max-width: 62em) {
-  /* line 77, src/assets/scss/pages/_route-info.scss */
+  /* line 78, src/assets/scss/pages/_route-info.scss */
   .route-grid .place-list {
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
@@ -7037,43 +7067,43 @@ i.fa:hover {
 }
 
 @media (max-width: 62em) {
-  /* line 82, src/assets/scss/pages/_route-info.scss */
+  /* line 83, src/assets/scss/pages/_route-info.scss */
   .route-grid .place-list .place-item {
     display: inline-block;
   }
-  /* line 85, src/assets/scss/pages/_route-info.scss */
+  /* line 86, src/assets/scss/pages/_route-info.scss */
   .route-grid .place-list .place-item:not(:last-child) {
     -webkit-margin-end: 1.6rem;
             margin-inline-end: 1.6rem;
   }
 }
 
-/* line 91, src/assets/scss/pages/_route-info.scss */
+/* line 92, src/assets/scss/pages/_route-info.scss */
 .route-grid .selected-place-item {
   -webkit-filter: saturate(1) !important;
           filter: saturate(1) !important;
 }
 
-/* line 97, src/assets/scss/pages/_route-info.scss */
+/* line 98, src/assets/scss/pages/_route-info.scss */
 .route-grid__picture {
   grid-area: pic;
   overflow: hidden;
 }
 
 @media (max-width: 47em) {
-  /* line 97, src/assets/scss/pages/_route-info.scss */
+  /* line 98, src/assets/scss/pages/_route-info.scss */
   .route-grid__picture {
     grid-column: 1/ -1;
   }
 }
 
-/* line 107, src/assets/scss/pages/_route-info.scss */
+/* line 108, src/assets/scss/pages/_route-info.scss */
 .route-grid__picture .slick-slider, .route-grid__picture .slick-track, .route-grid__picture .slick-list {
   height: 100% !important;
   overflow: hidden;
 }
 
-/* line 111, src/assets/scss/pages/_route-info.scss */
+/* line 112, src/assets/scss/pages/_route-info.scss */
 .route-grid__picture .slick-slider img {
   height: 100%;
   width: 100%;
@@ -7081,7 +7111,7 @@ i.fa:hover {
      object-fit: contain;
 }
 
-/* line 119, src/assets/scss/pages/_route-info.scss */
+/* line 120, src/assets/scss/pages/_route-info.scss */
 .route-grid__info {
   grid-area: info;
   padding: 3rem;
@@ -7091,7 +7121,7 @@ i.fa:hover {
 }
 
 @media (max-width: 47em) {
-  /* line 119, src/assets/scss/pages/_route-info.scss */
+  /* line 120, src/assets/scss/pages/_route-info.scss */
   .route-grid__info {
     width: 100%;
     grid-column: 1/ -1;
@@ -7100,7 +7130,7 @@ i.fa:hover {
   }
 }
 
-/* line 132, src/assets/scss/pages/_route-info.scss */
+/* line 133, src/assets/scss/pages/_route-info.scss */
 .route-grid__info__head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7113,20 +7143,20 @@ i.fa:hover {
           align-items: center;
 }
 
-/* line 136, src/assets/scss/pages/_route-info.scss */
+/* line 137, src/assets/scss/pages/_route-info.scss */
 .route-grid__info__head h4 {
   font-size: 3.6rem;
   font-family: var(--font-medium);
 }
 
 @media (max-width: 100em) {
-  /* line 136, src/assets/scss/pages/_route-info.scss */
+  /* line 137, src/assets/scss/pages/_route-info.scss */
   .route-grid__info__head h4 {
     font-size: 3rem;
   }
 }
 
-/* line 146, src/assets/scss/pages/_route-info.scss */
+/* line 147, src/assets/scss/pages/_route-info.scss */
 .route-grid__info__title-sub {
   font-size: 2rem;
   font-family: var(--font-regular);
@@ -7136,31 +7166,31 @@ i.fa:hover {
 }
 
 @media (max-width: 100em) {
-  /* line 146, src/assets/scss/pages/_route-info.scss */
+  /* line 147, src/assets/scss/pages/_route-info.scss */
   .route-grid__info__title-sub {
     font-size: 1.8rem;
   }
 }
 
 @media (max-width: 90em) {
-  /* line 146, src/assets/scss/pages/_route-info.scss */
+  /* line 147, src/assets/scss/pages/_route-info.scss */
   .route-grid__info__title-sub {
     font-size: 1.6rem;
   }
 }
 
-/* line 161, src/assets/scss/pages/_route-info.scss */
+/* line 162, src/assets/scss/pages/_route-info.scss */
 .route-grid__info__icons .favourite-btn {
   line-height: 0;
 }
 
-/* line 163, src/assets/scss/pages/_route-info.scss */
+/* line 164, src/assets/scss/pages/_route-info.scss */
 .route-grid__info__icons .favourite-btn svg {
   width: 2rem;
   height: 2rem;
 }
 
-/* line 168, src/assets/scss/pages/_route-info.scss */
+/* line 169, src/assets/scss/pages/_route-info.scss */
 .route-grid__info__icons li {
   width: 4.4rem;
   height: 4.4rem;
@@ -7179,20 +7209,20 @@ i.fa:hover {
 }
 
 @media (max-width: 100em) {
-  /* line 168, src/assets/scss/pages/_route-info.scss */
+  /* line 169, src/assets/scss/pages/_route-info.scss */
   .route-grid__info__icons li {
     width: 4rem;
     height: 4rem;
   }
 }
 
-/* line 181, src/assets/scss/pages/_route-info.scss */
+/* line 182, src/assets/scss/pages/_route-info.scss */
 .route-grid__info__icons li:first-child {
   -webkit-margin-end: 7px;
           margin-inline-end: 7px;
 }
 
-/* line 185, src/assets/scss/pages/_route-info.scss */
+/* line 186, src/assets/scss/pages/_route-info.scss */
 .route-grid__info__icons ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -7202,7 +7232,7 @@ i.fa:hover {
           align-items: center;
 }
 
-/* line 191, src/assets/scss/pages/_route-info.scss */
+/* line 192, src/assets/scss/pages/_route-info.scss */
 .route-grid__info__icons .icon {
   width: 2rem;
   height: 2rem;
@@ -7211,24 +7241,24 @@ i.fa:hover {
 }
 
 @media (max-width: 100em) {
-  /* line 191, src/assets/scss/pages/_route-info.scss */
+  /* line 192, src/assets/scss/pages/_route-info.scss */
   .route-grid__info__icons .icon {
     width: 1.8rem;
     height: 1.8rem;
   }
 }
 
-/* line 203, src/assets/scss/pages/_route-info.scss */
+/* line 204, src/assets/scss/pages/_route-info.scss */
 .route-grid__info .location-details__info {
   margin-top: 2.7rem;
 }
 
-/* line 208, src/assets/scss/pages/_route-info.scss */
+/* line 209, src/assets/scss/pages/_route-info.scss */
 .route-grid__info .location-details__info-group span:first-child {
   color: var(--color-black);
 }
 
-/* line 213, src/assets/scss/pages/_route-info.scss */
+/* line 214, src/assets/scss/pages/_route-info.scss */
 .route-grid__info p {
   font-size: 1.5rem;
   color: var(--color-black);
@@ -7237,13 +7267,13 @@ i.fa:hover {
 }
 
 @media (max-width: 90em) {
-  /* line 213, src/assets/scss/pages/_route-info.scss */
+  /* line 214, src/assets/scss/pages/_route-info.scss */
   .route-grid__info p {
     font-size: 1.4rem;
   }
 }
 
-/* line 222, src/assets/scss/pages/_route-info.scss */
+/* line 223, src/assets/scss/pages/_route-info.scss */
 .route-grid__info p .read-more {
   color: #0094D1;
   font-family: var(--font-medium);
@@ -7252,21 +7282,21 @@ i.fa:hover {
   cursor: pointer;
 }
 
-/* line 232, src/assets/scss/pages/_route-info.scss */
+/* line 233, src/assets/scss/pages/_route-info.scss */
 .route-grid__map {
   grid-area: map;
   height: 90vh;
 }
 
 @media (max-width: 62em) {
-  /* line 232, src/assets/scss/pages/_route-info.scss */
+  /* line 233, src/assets/scss/pages/_route-info.scss */
   .route-grid__map {
     width: 50vw;
   }
 }
 
 @media (max-width: 47em) {
-  /* line 232, src/assets/scss/pages/_route-info.scss */
+  /* line 233, src/assets/scss/pages/_route-info.scss */
   .route-grid__map {
     width: 100%;
     grid-column: 1/ -1;
@@ -7274,7 +7304,7 @@ i.fa:hover {
   }
 }
 
-/* line 245, src/assets/scss/pages/_route-info.scss */
+/* line 246, src/assets/scss/pages/_route-info.scss */
 .route-grid__map img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -7282,12 +7312,12 @@ i.fa:hover {
      object-position: top;
 }
 
-/* line 253, src/assets/scss/pages/_route-info.scss */
+/* line 254, src/assets/scss/pages/_route-info.scss */
 .readMore-content {
   display: none;
 }
 
-/* line 255, src/assets/scss/pages/_route-info.scss */
+/* line 256, src/assets/scss/pages/_route-info.scss */
 .readMore-content__warning {
   background-color: rgba(255, 45, 22, 0.205);
   padding: 3.3rem 2.5rem;
@@ -7301,18 +7331,18 @@ i.fa:hover {
 }
 
 @media (max-width: 48em) {
-  /* line 255, src/assets/scss/pages/_route-info.scss */
+  /* line 256, src/assets/scss/pages/_route-info.scss */
   .readMore-content__warning {
     padding: 15px;
   }
 }
 
-/* line 264, src/assets/scss/pages/_route-info.scss */
+/* line 265, src/assets/scss/pages/_route-info.scss */
 .readMore-content__warning--green {
   background-color: rgba(10, 145, 46, 0.205);
 }
 
-/* line 270, src/assets/scss/pages/_route-info.scss */
+/* line 271, src/assets/scss/pages/_route-info.scss */
 .readMore-content__warning__content h5 {
   color: #00AEFC;
   font-size: 1.5rem;
@@ -7320,31 +7350,31 @@ i.fa:hover {
   margin-bottom: 1.4rem;
 }
 
-/* line 276, src/assets/scss/pages/_route-info.scss */
+/* line 277, src/assets/scss/pages/_route-info.scss */
 .readMore-content__warning__content p {
   color: #0A912F !important;
 }
 
-/* line 281, src/assets/scss/pages/_route-info.scss */
+/* line 282, src/assets/scss/pages/_route-info.scss */
 .readMore-content__warning p {
   margin-top: 0;
   color: #FF2D16;
   font-family: var(--font-regular);
 }
 
-/* line 287, src/assets/scss/pages/_route-info.scss */
+/* line 288, src/assets/scss/pages/_route-info.scss */
 .readMore-content__warning__icon {
   -webkit-margin-end: 2rem;
           margin-inline-end: 2rem;
 }
 
-/* line 289, src/assets/scss/pages/_route-info.scss */
+/* line 290, src/assets/scss/pages/_route-info.scss */
 .readMore-content__warning__icon .icon {
   height: 7rem;
   width: 3rem;
 }
 
-/* line 297, src/assets/scss/pages/_route-info.scss */
+/* line 298, src/assets/scss/pages/_route-info.scss */
 .favourite-btn .icon-fav {
   width: 1.5rem;
   height: 1.5rem;
@@ -7352,17 +7382,17 @@ i.fa:hover {
   stroke: var(--color-white);
 }
 
-/* line 303, src/assets/scss/pages/_route-info.scss */
+/* line 304, src/assets/scss/pages/_route-info.scss */
 .favourite-btn__input {
   display: none;
 }
 
-/* line 307, src/assets/scss/pages/_route-info.scss */
+/* line 308, src/assets/scss/pages/_route-info.scss */
 .favourite-btn__label {
   cursor: pointer;
 }
 
-/* line 311, src/assets/scss/pages/_route-info.scss */
+/* line 312, src/assets/scss/pages/_route-info.scss */
 .favourite-btn__input:checked ~ .favourite-btn__label .icon-fav {
   -webkit-animation: favIconanim 1s ease-in-out;
           animation: favIconanim 1s ease-in-out;
@@ -7372,27 +7402,27 @@ i.fa:hover {
           animation-fill-mode: both;
 }
 
-/* line 318, src/assets/scss/pages/_route-info.scss */
+/* line 319, src/assets/scss/pages/_route-info.scss */
 .image-scroll {
   margin-top: 4rem;
   overflow-x: auto;
 }
 
-/* line 322, src/assets/scss/pages/_route-info.scss */
+/* line 323, src/assets/scss/pages/_route-info.scss */
 .image-scroll__wrap {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
-/* line 326, src/assets/scss/pages/_route-info.scss */
+/* line 327, src/assets/scss/pages/_route-info.scss */
 .image-scroll ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 329, src/assets/scss/pages/_route-info.scss */
+/* line 330, src/assets/scss/pages/_route-info.scss */
 .image-scroll ul li {
   width: 19rem;
   height: 22rem;
@@ -7403,7 +7433,7 @@ i.fa:hover {
   position: relative;
 }
 
-/* line 336, src/assets/scss/pages/_route-info.scss */
+/* line 337, src/assets/scss/pages/_route-info.scss */
 .image-scroll ul li::after {
   content: "";
   display: block;
@@ -7417,7 +7447,7 @@ i.fa:hover {
   z-index: 1;
 }
 
-/* line 354, src/assets/scss/pages/_route-info.scss */
+/* line 355, src/assets/scss/pages/_route-info.scss */
 .image-scroll ul li span {
   position: absolute;
   left: 1.4rem;
@@ -7430,7 +7460,7 @@ i.fa:hover {
   text-transform: uppercase;
 }
 
-/* line 370, src/assets/scss/pages/_route-info.scss */
+/* line 371, src/assets/scss/pages/_route-info.scss */
 .place-item {
   -webkit-filter: saturate(0);
           filter: saturate(0);
@@ -7438,18 +7468,18 @@ i.fa:hover {
   margin-top: 1.5rem;
 }
 
-/* line 373, src/assets/scss/pages/_route-info.scss */
+/* line 374, src/assets/scss/pages/_route-info.scss */
 .place-item:hover {
   -webkit-filter: saturate(1) !important;
           filter: saturate(1) !important;
 }
 
-/* line 376, src/assets/scss/pages/_route-info.scss */
+/* line 377, src/assets/scss/pages/_route-info.scss */
 .place-item:first-child {
   margin-top: 2.5rem;
 }
 
-/* line 381, src/assets/scss/pages/_route-info.scss */
+/* line 382, src/assets/scss/pages/_route-info.scss */
 .place-item__wrap {
   border-radius: 1.7rem;
   position: relative;
@@ -7457,7 +7487,7 @@ i.fa:hover {
   height: 12.1rem;
 }
 
-/* line 393, src/assets/scss/pages/_route-info.scss */
+/* line 394, src/assets/scss/pages/_route-info.scss */
 .place-item__content {
   position: absolute;
   top: 0;
@@ -7477,7 +7507,7 @@ i.fa:hover {
   height: 100%;
 }
 
-/* line 405, src/assets/scss/pages/_route-info.scss */
+/* line 406, src/assets/scss/pages/_route-info.scss */
 .place-item__head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7490,7 +7520,7 @@ i.fa:hover {
           align-items: center;
 }
 
-/* line 411, src/assets/scss/pages/_route-info.scss */
+/* line 412, src/assets/scss/pages/_route-info.scss */
 .place-item__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7500,7 +7530,7 @@ i.fa:hover {
           align-items: center;
 }
 
-/* line 414, src/assets/scss/pages/_route-info.scss */
+/* line 415, src/assets/scss/pages/_route-info.scss */
 .place-item__title__number {
   width: 1.8rem;
   height: 1.8rem;
@@ -7522,33 +7552,33 @@ i.fa:hover {
           align-items: center;
 }
 
-/* line 428, src/assets/scss/pages/_route-info.scss */
+/* line 429, src/assets/scss/pages/_route-info.scss */
 .place-item__title__name {
   font-size: 1.6rem;
   font-family: var(--font-regular);
 }
 
 @media (max-width: 100em) {
-  /* line 428, src/assets/scss/pages/_route-info.scss */
+  /* line 429, src/assets/scss/pages/_route-info.scss */
   .place-item__title__name {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 100em) {
-  /* line 428, src/assets/scss/pages/_route-info.scss */
+  /* line 429, src/assets/scss/pages/_route-info.scss */
   .place-item__title__name {
     font-size: 1.4rem;
   }
 }
 
-/* line 442, src/assets/scss/pages/_route-info.scss */
+/* line 443, src/assets/scss/pages/_route-info.scss */
 .place-item__fav .icon-fav {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-/* line 448, src/assets/scss/pages/_route-info.scss */
+/* line 449, src/assets/scss/pages/_route-info.scss */
 .place-item__bottom {
   margin-top: auto;
   display: -webkit-box;
@@ -7562,32 +7592,32 @@ i.fa:hover {
           align-items: center;
 }
 
-/* line 454, src/assets/scss/pages/_route-info.scss */
+/* line 455, src/assets/scss/pages/_route-info.scss */
 .place-item__bottom .distance-info {
   color: var(--color-white);
 }
 
-/* line 456, src/assets/scss/pages/_route-info.scss */
+/* line 457, src/assets/scss/pages/_route-info.scss */
 .place-item__bottom .distance-info .icon-distance {
   width: 6px;
   height: 12px;
   fill: var(--color-white);
 }
 
-/* line 462, src/assets/scss/pages/_route-info.scss */
+/* line 463, src/assets/scss/pages/_route-info.scss */
 .place-item__bottom .distance-info__number {
   font-size: 1.8rem !important;
   color: var(--color-white);
 }
 
-/* line 468, src/assets/scss/pages/_route-info.scss */
+/* line 469, src/assets/scss/pages/_route-info.scss */
 .place-item__bottom .distance-info span {
   font-family: var(--font-light);
   font-size: 12px;
   color: var(--color-white);
 }
 
-/* line 475, src/assets/scss/pages/_route-info.scss */
+/* line 476, src/assets/scss/pages/_route-info.scss */
 .place-item__icon-info-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7597,7 +7627,7 @@ i.fa:hover {
           align-items: center;
 }
 
-/* line 480, src/assets/scss/pages/_route-info.scss */
+/* line 481, src/assets/scss/pages/_route-info.scss */
 .place-item__icon {
   width: 2.4rem;
   height: 2.4rem;
@@ -7613,13 +7643,13 @@ i.fa:hover {
           justify-content: center;
 }
 
-/* line 487, src/assets/scss/pages/_route-info.scss */
+/* line 488, src/assets/scss/pages/_route-info.scss */
 .place-item__icon:not(:last-child) {
   -webkit-margin-end: 5px;
           margin-inline-end: 5px;
 }
 
-/* line 492, src/assets/scss/pages/_route-info.scss */
+/* line 493, src/assets/scss/pages/_route-info.scss */
 .place-item__icon img {
   width: 1.6rem;
   height: auto;
