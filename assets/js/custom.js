@@ -166,12 +166,16 @@ $(document).ready(function () {
     $('.popup-slide-1').removeClass('popupVisible');
     $("#login").show();
     addPopup();
+    document.body.style.marginInlineEnd = '0';
+    document.querySelector('header').style.width = '100%';
   });
   $(".sign-up-btn").click(function () {
     $("#login").hide();
     removePopup();
     $("#createAccount").show();
     addPopup();
+    document.body.style.marginInlineEnd = '0';
+    document.querySelector('header').style.width = '100%';
   });
   $(".place-item").click(function () {
     $(".list-wrap__end").show();
