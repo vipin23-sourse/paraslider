@@ -206,14 +206,23 @@ window.addEventListener('mouseup', function (event) {
   var pol = document.getElementById('login');
   var pol1 = document.getElementById('createAccount');
 
+  function checkPosition() {
+    if (window.matchMedia('(max-width: 767px)').matches) {} else {
+      document.body.style.marginInlineEnd = '0';
+      document.querySelector('header').style.width = '100%';
+    }
+  }
+
   if (event.target != pol && event.target.parentNode != pol) {
     pol.style.display = 'none';
     document.body.style.overflowY = 'auto';
+    checkPosition();
   }
 
   if (event.target != pol1 && event.target.parentNode != pol1) {
     pol1.style.display = 'none';
     document.body.style.overflowY = 'auto';
+    checkPosition();
   }
 });
 var playBtn = document.querySelector('.play-btn'); //PLAYER FUNCTIONS
