@@ -8132,7 +8132,7 @@ i.fa:hover {
 
 /* line 125, src/assets/scss/pages/_activities.scss */
 .activities-grid__image-slider .slider {
-  max-width: 75.5rem;
+  max-width: 100%;
   height: 100%;
 }
 
