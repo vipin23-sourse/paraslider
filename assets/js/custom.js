@@ -89,6 +89,15 @@ $(document).ready(function () {
 
   function addPopup() {
     document.body.style.overflowY = 'hidden';
+
+    function checkPosition() {
+      if (window.matchMedia('(max-width: 767px)').matches) {} else {
+        document.body.style.marginInlineEnd = '10px';
+        document.querySelector('header').style.width = 'calc(100% - 10px)';
+      }
+    }
+
+    checkPosition();
     return;
   }
 
@@ -97,6 +106,14 @@ $(document).ready(function () {
   function removePopup() {
     document.body.style.overflowY = 'auto'; // document.querySelector('.home-page .detail-page').style.overflowY = 'hidden';
 
+    function checkPosition() {
+      if (window.matchMedia('(max-width: 767px)').matches) {} else {
+        document.body.style.marginInlineEnd = '0';
+        document.querySelector('header').style.width = '100%';
+      }
+    }
+
+    checkPosition();
     return;
   }
 
