@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22.883" height="22.883" viewBox="0 0 22.883 22.883">
-  <g id="Group_2812" data-name="Group 2812" transform="translate(-333 -56)">
-    <g id="Ellipse_56" data-name="Ellipse 56" transform="translate(333 56)" fill="none" stroke="#000" stroke-width="2.5">
-      <circle cx="8.633" cy="8.633" r="8.633" stroke="none"/>
-      <circle cx="8.633" cy="8.633" r="7.383" fill="none"/>
-    </g>
-    <line id="Line_43" data-name="Line 43" x2="7.554" y2="7.554" transform="translate(347.445 70.445)" fill="none" stroke="#000" stroke-width="2.5"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="22.883" height="22.883"><g data-name="Group 2812" fill="none" stroke="#000" stroke-width="2.5"><g data-name="Ellipse 56"><circle cx="8.633" cy="8.633" r="8.633" stroke="none"/><circle cx="8.633" cy="8.633" r="7.383"/></g><path data-name="Line 43" d="M14.445 14.445l7.554 7.554"/></g></svg>

@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89.489" height="12" viewBox="0 0 89.489 12">
-  <defs>
-    <filter id="hiking-route" x="0" y="0" width="89.489" height="12" filterUnits="userSpaceOnUse">
-      <feOffset input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="1.5" result="blur"/>
-      <feFlood flood-color="#479b6e"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#hiking-route)">
-    <path id="hiking-route-2" data-name="hiking-route" d="M995.878-2053.244h77.489" transform="translate(-989.88 2059.24)" fill="none" stroke="#479b6e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke-dasharray="3 5"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="89.489" height="12"><defs><filter id="a" x="0" y="0" width="89.489" height="12" filterUnits="userSpaceOnUse"><feOffset/><feGaussianBlur stdDeviation="1.5" result="blur"/><feFlood flood-color="#479b6e"/><feComposite operator="in" in2="blur"/><feComposite in="SourceGraphic"/></filter></defs><g filter="url(#a)"><path data-name="hiking-route" d="M5.998 5.996h77.489" fill="none" stroke="#479b6e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" stroke-dasharray="3 5"/></g></svg>

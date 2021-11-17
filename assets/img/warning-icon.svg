@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="70" viewBox="0 0 30 70">
-  <g id="warning-icon" transform="translate(0 0)">
-    <g id="Group_2184" data-name="Group 2184" transform="translate(0 0)">
-      <path id="Path_12147" data-name="Path 12147" d="M0,0V45.659H30V0Z" fill="#ff2d16"/>
-    </g>
-    <g id="Group_2185" data-name="Group 2185" transform="translate(0 48.966)">
-      <path id="Path_12148" data-name="Path 12148" d="M0,0,14.617,21.034,30,0Z" fill="#ff2d16"/>
-    </g>
-    <g id="Group_2186" data-name="Group 2186" transform="translate(11.211 6.987)">
-      <path id="Path_12149" data-name="Path 12149" d="M0,2.529V-2.04H7.461V2.529L5.6,20.58H1.823ZM.125,23.268h7.21v6.048H.125Z" transform="translate(0 2.04)" fill="#fff"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="70"><g data-name="Group 2184"><path data-name="Path 12147" d="M0 0v45.659h30V0z" fill="#ff2d16"/></g><g data-name="Group 2185"><path data-name="Path 12148" d="M0 48.966L14.617 70 30 48.966z" fill="#ff2d16"/></g><g data-name="Group 2186"><path data-name="Path 12149" d="M11.211 11.556V6.987h7.461v4.569l-1.861 18.051h-3.777zm.125 20.739h7.21v6.048h-7.21z" fill="#fff"/></g></svg>

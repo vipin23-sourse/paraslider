@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="23.676" height="23.631" viewBox="0 0 23.676 23.631">
-  <g id="map-icon" transform="translate(1 1)">
-    <g id="icon-map">
-      <rect id="Rectangle_242" data-name="Rectangle 242" width="21.676" height="21.631" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-      <path id="Path_350" data-name="Path 350" d="M231.761,424.634l5.75-5.738,4.931,4.92" transform="translate(-231.761 -409.791)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-      <path id="Path_351" data-name="Path 351" d="M234.107,431.514,248.453,417.2l4.918,4.908" transform="translate(-231.693 -409.836)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="23.676" height="23.631"><g fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"><path data-name="Rectangle 242" d="M1 1h21.676v21.631H1z"/><path data-name="Path 350" d="M1 15.843l5.75-5.738 4.931 4.92"/><path data-name="Path 351" d="M3.414 22.678L17.76 8.364l4.918 4.908"/></g></svg>

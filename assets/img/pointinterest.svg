@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.704" height="35.18" viewBox="0 0 20.704 35.18">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#fff" stop-opacity="0.353"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0.667"/>
-    </linearGradient>
-  </defs>
-  <g id="pointinterest" transform="translate(0 0.5)">
-    <g id="Group_1269" data-name="Group 1269" transform="translate(0 0)">
-      <rect id="Rectangle_493" data-name="Rectangle 493" width="19.669" height="19.669" transform="translate(0.518)" fill="#0094d1" stroke="#fae708" stroke-width="1"/>
-      <path id="Path_796" data-name="Path 796" d="M317.122,496.756h-20.7l10.352,14.493Z" transform="translate(-296.418 -476.569)" fill="#fae708"/>
-      <path id="Path_796-2" data-name="Path 796" d="M302.441,496.756v14.493l10.352-14.493Z" transform="translate(-292.089 -476.569)" fill="url(#linear-gradient)"/>
-    </g>
-    <text id="A" transform="translate(10.352 13.977)" fill="#fff" font-size="11" font-family="CertoSans-Bold, Certo Sans" font-weight="700" letter-spacing="0.1em"><tspan x="-3.817" y="0">A</tspan></text>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="35.18"><defs><linearGradient id="a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fff" stop-opacity=".353"/><stop offset="1" stop-color="#fff" stop-opacity=".667"/></linearGradient></defs><g data-name="Group 1269"><path data-name="Rectangle 493" fill="#0094d1" stroke="#fae708" d="M.518.5h19.669v19.669H.518z"/><path data-name="Path 796" d="M20.704 20.687H.004L10.356 35.18z" fill="#fae708"/><path data-name="Path 796" d="M302.441 496.756v14.493l10.352-14.493z" transform="translate(-292.089 -476.069)" fill="url(#a)"/></g><text transform="translate(10.352 14.477)" fill="#fff" font-size="11" font-family="CertoSans-Bold, Certo Sans" font-weight="700" letter-spacing=".1em"><tspan x="-3.817" y="0">A</tspan></text></svg>

@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.818" height="13.578" viewBox="0 0 19.818 13.578">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.5" y1="1.971" x2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0.264" stop-color="#fff"/>
-      <stop offset="0.329" stop-color="#fff" stop-opacity="0.973"/>
-      <stop offset="0.424" stop-color="#fff" stop-opacity="0.894"/>
-      <stop offset="0.538" stop-color="#fff" stop-opacity="0.765"/>
-      <stop offset="0.667" stop-color="#fff" stop-opacity="0.588"/>
-      <stop offset="0.808" stop-color="#fff" stop-opacity="0.357"/>
-      <stop offset="0.957" stop-color="#fff" stop-opacity="0.082"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-  <g id="Group_2765" data-name="Group 2765" transform="translate(0 -21.199)">
-    <path id="Path_797" data-name="Path 797" d="M301.159,422.452H281.341L291,436.031Z" transform="translate(-281.341 -401.253)" fill="#eb5a3c"/>
-    <path id="Path_798" data-name="Path 798" d="M288.19,422.452v13.578l10.163-13.578Z" transform="translate(-278.535 -401.253)" opacity="0.47" fill="url(#linear-gradient)"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="19.818" height="13.578"><defs><linearGradient id="a" x1=".5" y1="1.971" x2=".5" gradientUnits="objectBoundingBox"><stop offset=".264" stop-color="#fff"/><stop offset=".329" stop-color="#fff" stop-opacity=".973"/><stop offset=".424" stop-color="#fff" stop-opacity=".894"/><stop offset=".538" stop-color="#fff" stop-opacity=".765"/><stop offset=".667" stop-color="#fff" stop-opacity=".588"/><stop offset=".808" stop-color="#fff" stop-opacity=".357"/><stop offset=".957" stop-color="#fff" stop-opacity=".082"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><g data-name="Group 2765"><path data-name="Path 797" d="M19.818 0H0l9.659 13.579z" fill="#eb5a3c"/><path data-name="Path 798" d="M288.19 422.452v13.578l10.163-13.578z" transform="translate(-278.535 -422.452)" opacity=".47" fill="url(#a)"/></g></svg>

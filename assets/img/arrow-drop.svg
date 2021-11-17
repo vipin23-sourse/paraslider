@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="15.414" height="9.121" viewBox="0 0 15.414 9.121">
-  <path id="arrow-drop" d="M7,14,0,7,7,0" transform="translate(0.707 7.707) rotate(-90)" fill="none" stroke="#fff" stroke-width="2" opacity="0.4"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="15.414" height="9.121"><path d="M14.707.707l-7 7-7-7" fill="none" stroke="#fff" stroke-width="2" opacity=".4"/></svg>
