@@ -162,6 +162,9 @@ $(document).ready(function () {
   $('.place-item').click(function () {
     $('.list-wrap__end').addClass('animation-left');
   });
+  $('.d-noneBtn').click(function () {
+    $('.list-wrap__end').removeClass('animation-left');
+  });
   $('.shareBtn').click(function () {
     $('.pop-up-notification-detail0').addClass('visible-notification');
     addPopup();
