@@ -6911,7 +6911,7 @@ i.fa:hover {
 @media (max-width: 37.5em) {
   /* line 114, src/assets/scss/pages/_detail-page.scss */
   .location-details__start .btn {
-    margin-bottom: 12.5rem;
+    margin-bottom: 15rem;
   }
 }
 
@@ -6945,7 +6945,7 @@ i.fa:hover {
   .location-details__end {
     -ms-flex-item-align: end;
         align-self: flex-end;
-    margin-bottom: 12rem;
+    margin-bottom: 14rem;
   }
 }
 
