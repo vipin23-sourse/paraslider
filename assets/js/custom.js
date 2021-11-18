@@ -158,6 +158,10 @@ $(document).ready(function () {
     $('.popup-slide-5').addClass('popupVisible');
     addPopup();
   });
+  $('.btn-feedback').click(function () {
+    $('.popup-slide-5').addClass('popupVisible');
+    addPopup();
+  });
   $(".close-btn").click(function () {
     $('.popup-slide-5').removeClass('popupVisible');
     removePopup();
