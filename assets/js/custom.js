@@ -206,6 +206,17 @@ $(document).ready(function () {
     input.focus();
   });
 });
+
+function loginClick() {
+  if (document.querySelector('#login').style.display === 'block') {
+    document.body.style.overflowY = 'hidden';
+  } else {
+    document.body.style.overflowY = 'auto';
+  }
+}
+
+;
+loginClick();
 window.addEventListener('mouseup', function (event) {
   var pol = document.getElementById('login');
   var pol1 = document.getElementById('createAccount');
