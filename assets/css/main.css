@@ -6763,11 +6763,16 @@ i.fa:hover {
 }
 
 /* line 292, src/assets/scss/pages/_home.scss */
+.home-page.fp-viewing-4 #fp-nav {
+  display: none !important;
+}
+
+/* line 299, src/assets/scss/pages/_home.scss */
 .home-page.fp-viewing-4 .side-nav {
   display: none !important;
 }
 
-/* line 298, src/assets/scss/pages/_home.scss */
+/* line 305, src/assets/scss/pages/_home.scss */
 .fp-tooltip {
   opacity: 1 !important;
   width: auto !important;
@@ -6775,13 +6780,13 @@ i.fa:hover {
   font-family: var(--font-light) !important;
 }
 
-/* line 305, src/assets/scss/pages/_home.scss */
+/* line 312, src/assets/scss/pages/_home.scss */
 #fp-nav ul li {
   width: 16px !important;
   height: 16px !important;
 }
 
-/* line 310, src/assets/scss/pages/_home.scss */
+/* line 317, src/assets/scss/pages/_home.scss */
 .scroll-arrow {
   position: absolute;
   left: 50%;
@@ -6792,13 +6797,13 @@ i.fa:hover {
 }
 
 @media (max-width: 47em) {
-  /* line 310, src/assets/scss/pages/_home.scss */
+  /* line 317, src/assets/scss/pages/_home.scss */
   .scroll-arrow {
     bottom: 8rem;
   }
 }
 
-/* line 320, src/assets/scss/pages/_home.scss */
+/* line 327, src/assets/scss/pages/_home.scss */
 #fp-nav {
   z-index: 70;
 }
@@ -7293,7 +7298,7 @@ i.fa:hover {
 @media (max-width: 65em) {
   /* line 307, src/assets/scss/pages/_detail-page.scss */
   .detail-page #fp-nav {
-    top: 15rem;
+    top: 15rem !important;
   }
 }
 
