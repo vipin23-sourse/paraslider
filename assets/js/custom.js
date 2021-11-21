@@ -211,39 +211,47 @@ $(document).ready(function () {
   });
 });
 
+
+
+
+function checkPosition() {
+  if (window.matchMedia('(max-width: 767px)').matches) {} else {
+    document.body.style.marginInlineEnd = '0';
+    document.querySelector('header').style.width = '100%';
+  }
+}
+$(document).mouseup(function(e) 
+{
+    var container = $("#login");
+    var container1 = $("#createAccount");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+      container.hide();
+      checkPosition();
+      document.body.style.overflowY = 'auto';
+
+    }
+  
+    if (!container1.is(e.target) && container1.has(e.target).length === 0) 
+    {
+      container1.hide();
+      checkPosition();
+      document.body.style.overflowY = 'auto';
+    }
+});
+
 function loginClick() {
-  if (document.querySelector('#login').style.display === 'block') {
+  if (document.querySelector('#login').style.display === 'block' || document.querySelector('#createAccount').style.display === 'block') {
     document.body.style.overflowY = 'hidden';
   } else {
     document.body.style.overflowY = 'auto';
   }
-}
-
-;
+};
 loginClick();
-window.addEventListener('mouseup', function (event) {
-  var pol = document.getElementById('login');
-  var pol1 = document.getElementById('createAccount');
 
-  function checkPosition() {
-    if (window.matchMedia('(max-width: 767px)').matches) {} else {
-      document.body.style.marginInlineEnd = '0';
-      document.querySelector('header').style.width = '100%';
-    }
-  }
 
-  if (event.target != pol && event.target.parentNode != pol) {
-    pol.style.display = 'none';
-    document.body.style.overflowY = 'auto';
-    checkPosition();
-  }
-
-  if (event.target != pol1 && event.target.parentNode != pol1) {
-    pol1.style.display = 'none';
-    document.body.style.overflowY = 'auto';
-    checkPosition();
-  }
-});
 var playBtn = document.querySelector('.play-btn'); //PLAYER FUNCTIONS
 
 function togglePlay() {

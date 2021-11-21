@@ -49,6 +49,8 @@ $(document).ready(function () {
     minimumResultsForSearch: -1
   });
 
+
+
   function addPopup() {
     $.fn.fullpage.setAutoScrolling(false);
     document.body.style.overflowY = 'hidden';
@@ -116,7 +118,6 @@ $(document).ready(function () {
   });
   $(".sign-up-btn").click(function () {
     $("#login").hide();
-    removePopup();
     $("#createAccount").show();
     addPopup();
   });
@@ -145,20 +146,57 @@ $(document).ready(function () {
     search.classList.toggle('active');
     input.focus();
   });
-  window.addEventListener('mouseup', function (event) {
-    var pol = document.getElementById('login');
-    var pol1 = document.getElementById('createAccount');
 
-    if (event.target != pol && event.target.parentNode != pol) {
-      pol.style.display = 'none';
+    $(document).mouseup(function(e) 
+    {
+        var container = $("#login");
+        var container1 = $("#createAccount");
+    
+        // if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+          container.hide();
+          $.fn.fullpage.setAutoScrolling(true);
+        
+        }
+      
+        if (!container1.is(e.target) && container1.has(e.target).length === 0) 
+        {
+          container1.hide();
+          $.fn.fullpage.setAutoScrolling(true);
+        }
+    });
+   
+  
+
+
+  function loginClick1() {
+    if (document.querySelector('#login').style.display === 'block' || document.querySelector('#createAccount').style.display === 'block') {
+      $.fn.fullpage.setAutoScrolling(false);
+    } else {
       $.fn.fullpage.setAutoScrolling(true);
     }
+  };
 
-    if (event.target != pol1 && event.target.parentNode != pol1) {
-      pol1.style.display = 'none';
-      $.fn.fullpage.setAutoScrolling(true);
-    }
-  }); // drag and drop image
+ loginClick1();
+  
+
+
+
+  // window.addEventListener('mouseup', function (event) {
+  //   var pol = document.getElementById('login');
+  //   var pol1 = document.getElementById('createAccount');
+
+  //   if (event.target != pol && event.target.parentNode != pol) {
+  //     pol.style.display = 'none';
+  //     $.fn.fullpage.setAutoScrolling(true);
+  //   }
+
+  //   if (event.target != pol1 && event.target.parentNode != pol1) {
+  //     pol1.style.display = 'none';
+  //     $.fn.fullpage.setAutoScrolling(true);
+  //   }
+  // }); // drag and drop image
 
   var $fileInput = $('.file-input');
   var $droparea = $('.file-drop-area'); // highlight drag area
