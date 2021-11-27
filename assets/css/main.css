@@ -5968,15 +5968,22 @@ ul {
 
 /* line 586, src/assets/scss/components/_pop-up.scss */
 .radio-scroll .slick-slide {
-  margin: 0 1rem;
+  margin: 0 7px;
 }
 
-/* line 589, src/assets/scss/components/_pop-up.scss */
+@media (max-width: 767px) {
+  /* line 586, src/assets/scss/components/_pop-up.scss */
+  .radio-scroll .slick-slide {
+    margin: 0 1rem;
+  }
+}
+
+/* line 592, src/assets/scss/components/_pop-up.scss */
 .radio-scroll .setting-group__radio-item {
   margin: 0;
 }
 
-/* line 595, src/assets/scss/components/_pop-up.scss */
+/* line 598, src/assets/scss/components/_pop-up.scss */
 .profile-editpopup {
   width: 42rem;
   height: 100vh;
@@ -5990,7 +5997,7 @@ ul {
   z-index: 999;
 }
 
-/* line 606, src/assets/scss/components/_pop-up.scss */
+/* line 609, src/assets/scss/components/_pop-up.scss */
 .profile-editpopup__head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6005,7 +6012,7 @@ ul {
   margin-bottom: 5rem;
 }
 
-/* line 613, src/assets/scss/components/_pop-up.scss */
+/* line 616, src/assets/scss/components/_pop-up.scss */
 .profile-editpopup__head__title {
   font-size: 2.4rem;
   font-family: var(--font-regular);
@@ -6014,14 +6021,14 @@ ul {
           margin-inline-start: auto;
 }
 
-/* line 620, src/assets/scss/components/_pop-up.scss */
+/* line 623, src/assets/scss/components/_pop-up.scss */
 .profile-editpopup__head .closeBTN {
   -webkit-margin-start: auto;
           margin-inline-start: auto;
   cursor: pointer;
 }
 
-/* line 629, src/assets/scss/components/_pop-up.scss */
+/* line 632, src/assets/scss/components/_pop-up.scss */
 .user-profile__image-wrap {
   position: relative;
   display: inline-block;
@@ -6031,7 +6038,7 @@ ul {
   margin-bottom: 3.6rem;
 }
 
-/* line 636, src/assets/scss/components/_pop-up.scss */
+/* line 639, src/assets/scss/components/_pop-up.scss */
 .user-profile img {
   width: 100%;
   height: 100%;
@@ -6047,7 +6054,7 @@ ul {
   display: inline-block;
 }
 
-/* line 649, src/assets/scss/components/_pop-up.scss */
+/* line 652, src/assets/scss/components/_pop-up.scss */
 .user-profile__picedit {
   position: absolute;
   z-index: 1;
@@ -6069,17 +6076,17 @@ ul {
           justify-content: center;
 }
 
-/* line 663, src/assets/scss/components/_pop-up.scss */
+/* line 666, src/assets/scss/components/_pop-up.scss */
 .user-profile__picedit input {
   display: none;
 }
 
-/* line 667, src/assets/scss/components/_pop-up.scss */
+/* line 670, src/assets/scss/components/_pop-up.scss */
 .user-profile__picedit label {
   cursor: pointer;
 }
 
-/* line 670, src/assets/scss/components/_pop-up.scss */
+/* line 673, src/assets/scss/components/_pop-up.scss */
 .user-profile__picedit label .icon {
   width: 1.3rem;
   height: 1.3rem;
@@ -6088,13 +6095,13 @@ ul {
   margin-top: 5px;
 }
 
-/* line 681, src/assets/scss/components/_pop-up.scss */
+/* line 684, src/assets/scss/components/_pop-up.scss */
 .user-profile__group {
   margin-bottom: 1.5rem;
   position: relative;
 }
 
-/* line 686, src/assets/scss/components/_pop-up.scss */
+/* line 689, src/assets/scss/components/_pop-up.scss */
 .user-profile__input {
   width: 100%;
   height: 4.2rem;
@@ -6107,12 +6114,12 @@ ul {
   padding: 1.2rem 2.5rem;
 }
 
-/* line 697, src/assets/scss/components/_pop-up.scss */
+/* line 700, src/assets/scss/components/_pop-up.scss */
 .user-profile__input:focus {
   outline: none;
 }
 
-/* line 701, src/assets/scss/components/_pop-up.scss */
+/* line 704, src/assets/scss/components/_pop-up.scss */
 .user-profile__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.699);
 }
@@ -6129,12 +6136,12 @@ ul {
   color: rgba(255, 255, 255, 0.699);
 }
 
-/* line 707, src/assets/scss/components/_pop-up.scss */
+/* line 710, src/assets/scss/components/_pop-up.scss */
 .user-profile__input-mail :focus:invalid .email-check {
   display: none;
 }
 
-/* line 713, src/assets/scss/components/_pop-up.scss */
+/* line 716, src/assets/scss/components/_pop-up.scss */
 .user-profile__changepas {
   display: block;
   font-family: var(--font-light);
@@ -6144,7 +6151,7 @@ ul {
   margin-bottom: 1.2rem;
 }
 
-/* line 722, src/assets/scss/components/_pop-up.scss */
+/* line 725, src/assets/scss/components/_pop-up.scss */
 .user-profile .btn-update {
   width: 100%;
   height: 4.2rem;
@@ -6159,7 +6166,7 @@ ul {
   margin-top: 3rem;
 }
 
-/* line 737, src/assets/scss/components/_pop-up.scss */
+/* line 740, src/assets/scss/components/_pop-up.scss */
 .user-profile__del {
   display: inline-block;
   margin-top: 5rem;
@@ -6168,7 +6175,7 @@ ul {
   cursor: pointer;
 }
 
-/* line 745, src/assets/scss/components/_pop-up.scss */
+/* line 748, src/assets/scss/components/_pop-up.scss */
 .user-profile .email-check {
   width: 1.4rem;
   height: 1.4rem;
@@ -6179,24 +6186,24 @@ ul {
           transform: translateY(-50%);
 }
 
-/* line 756, src/assets/scss/components/_pop-up.scss */
+/* line 759, src/assets/scss/components/_pop-up.scss */
 .feedback {
   margin-top: 5rem;
 }
 
 @media (max-width: 100em) {
-  /* line 756, src/assets/scss/components/_pop-up.scss */
+  /* line 759, src/assets/scss/components/_pop-up.scss */
   .feedback {
     margin-top: 3rem;
   }
 }
 
-/* line 761, src/assets/scss/components/_pop-up.scss */
+/* line 764, src/assets/scss/components/_pop-up.scss */
 .feedback .btn-settings {
   margin-top: 3rem !important;
 }
 
-/* line 765, src/assets/scss/components/_pop-up.scss */
+/* line 768, src/assets/scss/components/_pop-up.scss */
 .feedback__text-area {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
@@ -6208,13 +6215,13 @@ ul {
   font-family: var(--font-light);
 }
 
-/* line 775, src/assets/scss/components/_pop-up.scss */
+/* line 778, src/assets/scss/components/_pop-up.scss */
 .feedback__text-area:focus {
   border: none;
   outline: none;
 }
 
-/* line 780, src/assets/scss/components/_pop-up.scss */
+/* line 783, src/assets/scss/components/_pop-up.scss */
 .feedback__text-area::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.411);
 }
@@ -6231,13 +6238,13 @@ ul {
   color: rgba(255, 255, 255, 0.411);
 }
 
-/* line 784, src/assets/scss/components/_pop-up.scss */
+/* line 787, src/assets/scss/components/_pop-up.scss */
 .feedback__group {
   margin-bottom: 1.5rem;
   width: 100%;
 }
 
-/* line 786, src/assets/scss/components/_pop-up.scss */
+/* line 789, src/assets/scss/components/_pop-up.scss */
 .feedback__group select {
   width: 100%;
   height: 4.2rem;
@@ -6248,12 +6255,12 @@ ul {
   padding: 1.2rem 2.5rem;
 }
 
-/* line 794, src/assets/scss/components/_pop-up.scss */
+/* line 797, src/assets/scss/components/_pop-up.scss */
 .feedback__group select:focus {
   outline: transparent !important;
 }
 
-/* line 799, src/assets/scss/components/_pop-up.scss */
+/* line 802, src/assets/scss/components/_pop-up.scss */
 .feedback__group .select2-selection {
   width: 100%;
   height: 4.2rem;
@@ -6265,7 +6272,7 @@ ul {
   color: var(--color-white);
 }
 
-/* line 815, src/assets/scss/components/_pop-up.scss */
+/* line 818, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-drop-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6291,7 +6298,7 @@ ul {
 }
 
 @media (max-width: 767px) {
-  /* line 815, src/assets/scss/components/_pop-up.scss */
+  /* line 818, src/assets/scss/components/_pop-up.scss */
   .feedback__group .file-drop-area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6300,12 +6307,12 @@ ul {
   }
 }
 
-/* line 836, src/assets/scss/components/_pop-up.scss */
+/* line 839, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-drop-area.is-active {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* line 841, src/assets/scss/components/_pop-up.scss */
+/* line 844, src/assets/scss/components/_pop-up.scss */
 .feedback__group .fake-btn {
   text-transform: capitalize;
   text-decoration: underline;
@@ -6315,7 +6322,7 @@ ul {
   font-size: 1.4rem;
 }
 
-/* line 850, src/assets/scss/components/_pop-up.scss */
+/* line 853, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-msg {
   font-size: 1.8rem;
   font-weight: 300;
@@ -6325,14 +6332,14 @@ ul {
   text-overflow: ellipsis;
 }
 
-/* line 858, src/assets/scss/components/_pop-up.scss */
+/* line 861, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-msg svg {
   width: 3rem;
   height: 3rem;
   stroke: rgba(255, 255, 255, 0.459);
 }
 
-/* line 865, src/assets/scss/components/_pop-up.scss */
+/* line 868, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-input {
   position: absolute;
   left: 0;
@@ -6343,17 +6350,17 @@ ul {
   opacity: 0;
 }
 
-/* line 873, src/assets/scss/components/_pop-up.scss */
+/* line 876, src/assets/scss/components/_pop-up.scss */
 .feedback__group .file-input:focus {
   outline: none;
 }
 
-/* line 881, src/assets/scss/components/_pop-up.scss */
+/* line 884, src/assets/scss/components/_pop-up.scss */
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: var(--color-white);
 }
 
-/* line 885, src/assets/scss/components/_pop-up.scss */
+/* line 888, src/assets/scss/components/_pop-up.scss */
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
   background-image: url(../img/arrow-drop.svg) !important;
   background-color: transparent;
@@ -6367,7 +6374,7 @@ ul {
   top: 55% !important;
 }
 
-/* line 898, src/assets/scss/components/_pop-up.scss */
+/* line 901, src/assets/scss/components/_pop-up.scss */
 .select-drop {
   width: 100%;
   height: 4.2rem;
@@ -6377,12 +6384,12 @@ ul {
   padding: 1.2rem 2.5rem;
 }
 
-/* line 908, src/assets/scss/components/_pop-up.scss */
+/* line 911, src/assets/scss/components/_pop-up.scss */
 .pass-group {
   position: relative;
 }
 
-/* line 910, src/assets/scss/components/_pop-up.scss */
+/* line 913, src/assets/scss/components/_pop-up.scss */
 .pass-group .icon-eye {
   position: absolute;
   right: 2%;
