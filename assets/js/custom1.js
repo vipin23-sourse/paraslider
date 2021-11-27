@@ -49,77 +49,97 @@ $(document).ready(function () {
     minimumResultsForSearch: -1
   });
 
-
-
   function addPopup() {
-    $.fn.fullpage.setAutoScrolling(false);
-    document.body.style.overflowY = 'hidden';
+    // $.fn.fullpage.setAutoScrolling(false);
+    $.fn.fullpage.setMouseWheelScrolling(false);
+    $.fn.fullpage.setAllowScrolling(false);
     return;
   }
 
   ;
 
   function removePopup() {
-    $.fn.fullpage.setAutoScrolling(true);
+    $.fn.fullpage.setMouseWheelScrolling(true);
+    $.fn.fullpage.setAllowScrolling(true); // $.fn.fullpage.setAutoScrolling(true);
+
     return;
   }
 
   ;
   $('.menu-icon').click(function () {
-    $('.popup-slide-1').addClass('popupVisible');
+    $('.popup-slide-1 .popupC-bg').addClass('popupbg-show');
+    $('.popup-slide-1 .menu').addClass('popupVisible');
     addPopup();
   });
   $(".close-btn").click(function () {
-    $('.popup-slide-1').removeClass('popupVisible');
+    $('.popup-slide-1 .popupC-bg').removeClass('popupbg-show');
+    $('.popup-slide-1 .menu').removeClass('popupVisible');
     removePopup();
   });
   $('.icon-filter').click(function () {
-    $('.popup-slide-3').addClass('popupVisible');
+    $('.popup-slide-3 .popupC-bg').addClass('popupbg-show');
+    $('.popup-slide-3 .menu').addClass('popupVisible');
     addPopup();
   });
   $(".close-btn").click(function () {
-    $('.popup-slide-3').removeClass('popupVisible');
+    $('.popup-slide-3 .popupC-bg').removeClass('popupbg-show');
+    $('.popup-slide-3 .menu').removeClass('popupVisible');
     removePopup();
   });
   $('.settings-btn').click(function () {
-    $('.popup-slide-1').removeClass('popupVisible');
+    $('.popup-slide-1 .popupC-bg').removeClass('popupbg-show');
+    $('.popup-slide-1 .menu').removeClass('popupVisible');
     removePopup();
-    $('.popup-slide-2').addClass('popupVisible');
+    $('.popup-slide-2 .popupC-bg').addClass('popupbg-show');
+    $('.popup-slide-2 .menu').addClass('popupVisible');
     addPopup();
   });
   $(".close-btn").click(function () {
-    $('.popup-slide-2').removeClass('popupVisible');
+    $('.popup-slide-2 .popupC-bg').removeClass('popupbg-show');
+    $('.popup-slide-2 .menu').removeClass('popupVisible');
     removePopup();
   });
   $('.mapBtn').click(function () {
-    $('.popup-slide-4').addClass('popupVisible');
+    $('.popup-slide-4 .menu').addClass('popupVisible');
+    addPopup();
   });
   $(".close-btnmap").click(function () {
-    $('.popup-slide-4').removeClass('popupVisible');
+    $('.popup-slide-4 .menu').removeClass('popupVisible');
+    removePopup();
   });
   $('.support-btn').click(function () {
-    $('.popup-slide-1').removeClass('popupVisible');
+    $('.popup-slide-1 .popupC-bg').removeClass('popupbg-show');
+    $('.popup-slide-1 .menu').removeClass('popupVisible');
     removePopup();
-    $('.popup-slide-5').addClass('popupVisible');
+    $('.popup-slide-5 .popupC-bg').addClass('popupbg-show');
+    $('.popup-slide-5 .menu').addClass('popupVisible');
     addPopup();
   });
   $('.btn-feedback').click(function () {
-    $('.popup-slide-5').addClass('popupVisible');
+    $('.popup-slide-5').addClass('popupbg-show');
+    $('.popup-slide-5 .menu').addClass('popupVisible');
     addPopup();
   });
   $(".close-btn").click(function () {
-    $('.popup-slide-5').removeClass('popupVisible');
+    $('.popup-slide-5 .popupC-bg').removeClass('popupbg-show');
+    $('.popup-slide-5 .menu').removeClass('popupVisible');
     removePopup();
   });
   $(".log-btn").click(function () {
-    $('.popup-slide-1').removeClass('popupVisible');
+    $('.popup-slide-1 .popupC-bg').removeClass('popupbg-show');
+    $('.popup-slide-1 .menu').removeClass('popupVisible');
     $("#login").show();
-    addPopup();
+    $("#createAccount").hide();
+ 
+    document.body.style.marginInlineEnd = '0';
+    document.querySelector('header').style.width = '100%';
   });
   $(".sign-up-btn").click(function () {
     $("#login").hide();
     $("#createAccount").show();
-    addPopup();
+ 
+    document.body.style.marginInlineEnd = '0';
+    document.querySelector('header').style.width = '100%';
   });
   $(".place-item").click(function () {
     $(".list-wrap__end").show();
@@ -146,52 +166,41 @@ $(document).ready(function () {
     search.classList.toggle('active');
     input.focus();
   });
+/*
+  $(document).mouseup(function (e) {
+    var container = $("#login");
+    var container1 = $("#createAccount"); // if the target of the click isn't the container nor a descendant of the container
 
-    $(document).mouseup(function(e) 
-    {
-        var container = $("#login");
-        var container1 = $("#createAccount");
-    
-        // if the target of the click isn't the container nor a descendant of the container
-        if (!container.is(e.target) && container.has(e.target).length === 0) 
-        {
-          container.hide();
-          $.fn.fullpage.setAutoScrolling(true);
-        
-        }
-      
-        if (!container1.is(e.target) && container1.has(e.target).length === 0) 
-        {
-          container1.hide();
-          $.fn.fullpage.setAutoScrolling(true);
-        }
-    });
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      container.hide();
+      removePopup();
+    }
+
+    if (!container1.is(e.target) && container1.has(e.target).length === 0) {
+      container1.hide();
+      removePopup();
+    }
    
-  
-
-
+  });
+  */
+/*
   function loginClick1() {
     if (document.querySelector('#login').style.display === 'block' || document.querySelector('#createAccount').style.display === 'block') {
-      $.fn.fullpage.setAutoScrolling(false);
+      $.fn.fullpage.setMouseWheelScrolling(false);
+      $.fn.fullpage.setAllowScrolling(false);
     } else {
-      $.fn.fullpage.setAutoScrolling(true);
+      $.fn.fullpage.setMouseWheelScrolling(true);
+      $.fn.fullpage.setAllowScrolling(true);
     }
-  };
-
- loginClick1();
-  
-
-
-
-  // window.addEventListener('mouseup', function (event) {
+  }
+*/
+  ; // window.addEventListener('mouseup', function (event) {
   //   var pol = document.getElementById('login');
   //   var pol1 = document.getElementById('createAccount');
-
   //   if (event.target != pol && event.target.parentNode != pol) {
   //     pol.style.display = 'none';
   //     $.fn.fullpage.setAutoScrolling(true);
   //   }
-
   //   if (event.target != pol1 && event.target.parentNode != pol1) {
   //     pol1.style.display = 'none';
   //     $.fn.fullpage.setAutoScrolling(true);
